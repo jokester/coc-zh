@@ -77,7 +77,7 @@
 * [超越万古 / Out of the Aeons](Lovecraft/Out of the Aeons.md)
 * [异乡人 / The Outsider](Lovecraft/The Outsider.md)
 * [皮克曼的模特 / Pickman's Model](Lovecraft/Pickman's Model.md)
-* [屋中画 / The Picture in the House](Lovecraft/The Picture in the House.md)
+* [屋中画 / The Picture in the House](Lovecraft/The-Picture-in-the-House.md)
 * [诗与诸神 / Poetry and the Gods](Lovecraft/Poetry and the Gods.md)
 * [北极星 / Polaris](Lovecraft/Polaris.md)
 * [伊拉农的探求 / The Quest of Iranon](Lovecraft/The Quest of Iranon.md)
