@@ -6,8 +6,9 @@
 
 ---------
 
-## HPLovecraft
+#### H.P.Lovecraft
 
+<!--
 * [炼金术士 / The Alchemist](Lovecraft/The Alchemist.md)
 * [灰烬 / Ashes](Lovecraft/Ashes.md)
 * [疯狂山脉 / At the Mountains of Madness](Lovecraft/At the Mountains of Madness.md)
@@ -54,8 +55,11 @@
 * [蜡像馆惊魂 / The Horror in the Museum](Lovecraft/The Horror in the Museum.md)
 * [猎犬 / The Hound](Lovecraft/The Hound.md)
 * [休普诺斯 / Hypnos](Lovecraft/Hypnos.md)
-* [伊比德 / Ibid](Lovecraft/Ibid.md)
-* [地窖中 / In the Vault](Lovecraft/In the Vault.md)
+* [伊比德 / Ibid](Lovecraft/Ibid.md) -->
+* [地窖中 / In the Vault](Lovecraft/In-the-Vault.md)
+
+<!--
+
 * [厄瑞克斯之墙 / In the Walls of Eryx](Lovecraft/In the Walls of Eryx.md)
 * [最终测试 / The Last Test](Lovecraft/The Last Test.md)
 * [小玻璃瓶 / The Little Glass Bottle](Lovecraft/The Little Glass Bottle.md)
@@ -77,7 +81,10 @@
 * [超越万古 / Out of the Aeons](Lovecraft/Out of the Aeons.md)
 * [异乡人 / The Outsider](Lovecraft/The Outsider.md)
 * [皮克曼的模特 / Pickman's Model](Lovecraft/Pickman's Model.md)
+-->
 * [屋中画 / The Picture in the House](Lovecraft/The-Picture-in-the-House.md)
+
+<!--
 * [诗与诸神 / Poetry and the Gods](Lovecraft/Poetry and the Gods.md)
 * [北极星 / Polaris](Lovecraft/Polaris.md)
 * [伊拉农的探求 / The Quest of Iranon](Lovecraft/The Quest of Iranon.md)
@@ -114,3 +121,4 @@
 * [有翼死神 / Winged Death](Lovecraft/Winged Death.md)
 * [怪奇小说创作笔记 / Notes on Writing Weird Fiction](Lovecraft/Notes on Writing Weird Fiction.md)
 * [文学中的超自然恐怖 / Supernatural Horror in Literature](Lovecraft/Supernatural Horror in Literature.md)
+-->
