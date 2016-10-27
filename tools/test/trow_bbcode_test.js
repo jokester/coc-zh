@@ -1,5 +1,5 @@
 const assert = require('assert');
-const trow_bbcode = require('./trow_bbcode');
+const trow_bbcode = require('../lib/trow_bbcode');
 
 const text = `[quote name='Frend' date='2015-08-08, 19:21' post='170920']
 [center][size=3]In the Vault
@@ -71,14 +71,42 @@ const text = `[quote name='Frend' date='2015-08-08, 19:21' post='170920']
 
 
 
-
 `;
-console.log(trow_bbcode.toMD(text));
+
+    const testStr2 = `
+    [quote name='Frend' date='2015-08-08, 19:21' post='170920']
+[center][size=3]In the Vault
+地窖中[/size][/center]
+
+[right]原著： H. P. Lovecraft
+笨拙的译者：竹子[/right]
+
+译者声明：`;
+
+function deprecated() {
+    console.log(trow_bbcode.toMD(text));
+
+}
 
 
+function test__regexScan() {
 
+    const bbRegex = /\[|\]|\n|[^\[\]]+/g;
 
+    console.log(trow_bbcode.regexScan(testStr2, bbRegex));
+}
 
+function test__parse() {
+    const parsed = trow_bbcode.parseBBCode(text);
+    console.log(parsed);
+}
 
+function test__generate() {
+    const parsed = trow_bbcode.parseBBCode(text);
+    const mdLines = trow_bbcode.toMarkdown(parsed);
+    console.log(mdLines.join("\n\n"));
+}
 
-
+// test__regexScan();
+// test__parse();
+test__generate();

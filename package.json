@@ -1,0 +1,27 @@
+{
+  "name": "coc-zh",
+  "version": "0.1.0",
+  "description": "克苏鲁小说 中译版合集",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jokester/coc-zh.git"
+  },
+  "keywords": [
+    "HPLovecraft",
+    "coc",
+    "novel"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jokester/coc-zh/issues"
+  },
+  "homepage": "https://github.com/jokester/coc-zh#readme",
+  "dependencies": {
+    "gitbook-cli": "^2.3.0"
+  }
+}
