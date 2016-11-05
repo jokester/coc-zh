@@ -17,7 +17,8 @@
     "libtidy": "^0.3.0",
     "nan": "^2.4.0",
     "parse5": "^2.2.2",
-    "request": "^2.76.0"
+    "request": "^2.76.0",
+    "to-markdown": "^3.0.3"
   },
   "devDependencies": {
     "ts-node": "^1.6.0",

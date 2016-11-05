@@ -1,3 +1,6 @@
+/**
+ * selector
+ */
 interface DownloadItem {
     url: string
     type?: "trow" | "TODO"
@@ -5,6 +8,7 @@ interface DownloadItem {
     title: string
     title_zh: string
     prefix?: "HPL" | "TODO"
+    selector?: string
 }
 
 type DownloadList = DownloadItem[];
@@ -20,13 +24,14 @@ export function genFullname(item: DownloadItem) {
 export const download_list: DownloadList = [
     {
         // ref
-        url: "http://trow.cc/board/act=Post&CODE=02&f=82&t=24399&qpid=149586",
+        url: "http://trow.cc/board/showtopic=24399",
         title: "The Picture in the House",
-        title_zh: "屋中画"
+        title_zh: "屋中画",
+        selector: "#post-149586"
     },
-    {
-        url: "",
-        title: "Deaf, Dumb, and Blind",
-        title_zh: "聋，哑，瞎"
-    }
+    // {
+    //     url: "",
+    //     title: "Deaf, Dumb, and Blind",
+    //     title_zh: "聋，哑，瞎"
+    // }
 ];
