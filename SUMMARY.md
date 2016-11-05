@@ -6,6 +6,8 @@
 
 ---------
 
+<!-- 以下按作者列出 -->
+
 #### H.P.Lovecraft
 
 <!--
@@ -82,7 +84,7 @@
 * [异乡人 / The Outsider](Lovecraft/The Outsider.md)
 * [皮克曼的模特 / Pickman's Model](Lovecraft/Pickman's Model.md)
 -->
-* [屋中画 / The Picture in the House](HPL/The-Picture-in-the-House.md)
+* [屋中画 / The Picture in the House](/HPL/The-Picture-in-the-House.md)
 
 <!--
 * [诗与诸神 / Poetry and the Gods](Lovecraft/Poetry and the Gods.md)
@@ -122,3 +124,5 @@
 * [怪奇小说创作笔记 / Notes on Writing Weird Fiction](Lovecraft/Notes on Writing Weird Fiction.md)
 * [文学中的超自然恐怖 / Supernatural Horror in Literature](Lovecraft/Supernatural Horror in Literature.md)
 -->
+
+<!-- 此列表来自玖羽: http://trow.cc/board/index.php?showtopic=19824 -->

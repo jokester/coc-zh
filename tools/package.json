@@ -4,7 +4,9 @@
   "description": "Scripts used with coc-zh",
   "main": "index.js",
   "scripts": {
-    "test": "ts-node test.ts"
+    "test": "ts-node test.ts",
+    "fetch": "ts-node fetch.ts",
+    "build": "ts-node build.ts"
   },
   "author": "Wang Guan <momocraft@gmail.com>",
   "license": "MIT",
