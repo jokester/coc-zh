@@ -19,9 +19,6 @@ const cookieJar = (function () {
     return jar;
 })();
 
-// http://trow.cc/board/act=Post&CODE=02&f=82&t=24399&qpid=149586
-
-
 let reqCount = 0;
 
 export const http = {

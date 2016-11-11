@@ -4,7 +4,9 @@
   "description": "Scripts used with coc-zh",
   "main": "index.js",
   "scripts": {
-    "test": "ts-node test.ts"
+    "test": "ts-node test.ts",
+    "fetch": "ts-node fetch.ts",
+    "build": "ts-node build.ts"
   },
   "author": "Wang Guan <momocraft@gmail.com>",
   "license": "MIT",
@@ -17,7 +19,8 @@
     "libtidy": "^0.3.0",
     "nan": "^2.4.0",
     "parse5": "^2.2.2",
-    "request": "^2.76.0"
+    "request": "^2.76.0",
+    "to-markdown": "^3.0.3"
   },
   "devDependencies": {
     "ts-node": "^1.6.0",
