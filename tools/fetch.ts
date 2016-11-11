@@ -16,8 +16,10 @@ import { saveTemp } from './lib/local-io';
 function main() {
     download_list.forEach((item, itemNo) => {
         const itemDesc = `item#${itemNo}: ${item.title} / ${item.title_zh}`;
-        http.get(item.url)
-            .then(selectPart(item.selector))
+
+        const parts = item.source.map((src) => http.get(src.url).then(selectPart(src.selector)));
+
+        Promise.all(parts).then((parts_html) => parts_html.join("\n"))
             .then(decodeHtmlEntity)
             .then((html) => {
                 saveTemp(item, html);

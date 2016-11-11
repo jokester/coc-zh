@@ -1,12 +1,17 @@
+export interface DownloadSource {
+    // 页面url
+    url: string
+    // CSS selector
+    selector?: string
+}
+
 /**
  * selector
  */
 export interface DownloadItem {
 
-    // 页面url
-    url: string
-    // CSS selector
-    selector?: string
+    // 下载源
+    source: [DownloadSource]
 
     /**
      * id: 决定保存的文件名
@@ -170,11 +175,13 @@ const download_list_HPL: DownloadList = [
         title_zh: "屋中画",
         prefix: "HPL",
 
-        url: "http://trow.cc/board/showtopic=24399",
-        selector: "#post-149586",
+        source: [
+            {
+                url: "http://trow.cc/board/showtopic=24399",
+                selector: "#post-149586",
+            }
+        ]
     },
-
-
 ]
 
 export const download_list = [
