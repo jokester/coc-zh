@@ -67,30 +67,30 @@ const download_list_HPL: DownloadList = [
                 selector: [
                     // part I
                     "#post-117797",
-
                     // part II
                     "#post-117798",
-
                     // part III
                     "#post-117799",
-
                     // part IV
                     "#post-117800",
-
                     // part V
                     "#post-117801",
-
-                    // // part III
-                    // "#post-117799",
-
-                    // // part III
-                    // "#post-117799",
-
-                    // // part III
-                    // "#post-117799",
-
-                    // // part III
-                    // "#post-117799",
+                    // part VI
+                    "#post-117802",
+                    // part VII
+                    "#post-117803",
+                    // part VIII
+                    "#post-117804",
+                    // part IX
+                    "#post-117805",
+                    // part X
+                    "#post-117806",
+                    // part XI
+                    "#post-117807",
+                    // part XII
+                    "#post-117808",
+                    // 后记
+                    "#post-117811",
                 ]
             },
 
