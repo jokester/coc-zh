@@ -17,7 +17,12 @@ function main() {
     download_list.forEach((item, itemNo) => {
         const itemDesc = `item#${itemNo}: ${item.title} / ${item.title_zh}`;
 
-        const parts = item.source.map((src) => http.get(src.url).then(selectPart(src.selector)));
+        const parts = item.source.map((src) => {
+            const content = http.get(src.url)
+                .then(html => Promise.all(src.selector.map(s => selectPart(s)(html))))
+                .then(selectedParts => selectedParts.join("\n\n\n"));
+            return content;
+        });
 
         Promise.all(parts).then((parts_html) => parts_html.join("\n"))
             .then(decodeHtmlEntity)
