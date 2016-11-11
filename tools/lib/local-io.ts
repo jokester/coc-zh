@@ -18,11 +18,11 @@ function writeFile(absPath: string, content: string): Promise<void> {
 }
 
 export function saveTemp(item: DownloadItem, content: string) {
-    const path = `${__dirname}/../temp/${genFullname(item)}`;
+    const path = `${__dirname}/../temp/${genFullname(item)}.html`;
     return writeFile(path, content);
 }
 
 export function saveTransformed(item: DownloadItem, content: string) {
-    const path = `${__dirname}/../../${genFullname(item)}`;
+    const path = `${__dirname}/../../${genFullname(item)}.md`;
     return writeFile(path, content);
 }

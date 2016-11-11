@@ -18,9 +18,11 @@ function main() {
         const itemDesc = `item#${itemNo}: ${item.title} / ${item.title_zh}`;
         http.get(item.url)
             .then(selectPart(item.selector))
+            .then(decodeHtmlEntity)
             .then((html) => {
                 saveTemp(item, html);
             })
+            .then(logger.i.bind(null, `saved ${itemDesc}`))
             .catch(logger.e);
     })
 }
