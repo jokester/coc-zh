@@ -13,10 +13,6 @@ import { download_list, download_list_HPL } from './lib/download_list';
 
 function main() {
 
-
-
-
-
     download_list.forEach((item, itemNo) => {
         const itemDesc = `item#${itemNo}: ${item.title} / ${item.title_zh}`;
 
@@ -43,7 +39,7 @@ function summary() {
     const summary_lines_hpl = [
         '#### H.P.Lovecraft',
     ].concat(download_list_HPL.map((item) => {
-        return `[${item.title} / ${item.title_zh}](${genFullname(item)}.md)`;
+        return `* [${item.title} / ${item.title_zh}](${genFullname(item)}.md)`;
     }));
 
     const summary = summary_lines_prefix.concat(summary_lines_hpl).join("\n\n");
