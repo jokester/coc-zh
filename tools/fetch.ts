@@ -8,7 +8,8 @@ import { http } from './lib/net'
 import { logger_normal as logger } from './lib/util';
 import { articles } from './lib/articles'
 import { getPostContent, bb2Markdown } from './lib/trow_bbcode';
-import { download_list, downloadItem } from './lib/download_list';
+import { download_list } from './lib/download_list';
+import { downloadItem } from './lib/download';
 import { to_markdown } from './lib/to_markdown';
 
 function main() {
