@@ -8,7 +8,10 @@ interface Logger {
 export const logger_normal: Logger = {
 
     // w: WARNING
-    w: console.warn.bind(console),
+    w: function () {
+        const realArgs = ['WARN'].concat(Array.from(arguments));
+        console.error.apply(console, realArgs);
+    },
     // i: INFO
     i: console.info.bind(console),
     // v: VERBOSE
@@ -17,7 +20,7 @@ export const logger_normal: Logger = {
             console.debug.apply(console, arguments);
         }
     },
-    e: function() {
+    e: function () {
         const realArgs = ['ERROR'].concat(Array.from(arguments));
         console.error.apply(console, realArgs);
     }

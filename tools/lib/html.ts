@@ -15,7 +15,7 @@ export function tidyHTML(html: string, log?: (line: string) => void): Promise<st
                 reject(err);
             } else {
                 if (log) {
-                    (res.errlog || "").split(/\n/).forEach(function(line: string) {
+                    (res.errlog || "").split(/\n/).forEach(function (line: string) {
                         line && log(line);
                     });
                 }
@@ -30,7 +30,7 @@ export function tidyHTML(html: string, log?: (line: string) => void): Promise<st
 // curried
 export function selectPart(selector?: string): (html: string) => string {
 
-    return function(html: string) {
+    return function (html: string) {
         const context = cheerio.load(html);
 
         if (!selector)
@@ -48,12 +48,12 @@ export function selectPart(selector?: string): (html: string) => string {
 
 export function decodeHtmlEntity(str: string): string {
 
-    const step1 = str.replace(/&#([0-9]{1,3});/gi, function(match, numStr) {
+    const step1 = str.replace(/&#([0-9]{1,3});/gi, function (match, numStr) {
         var num = parseInt(numStr, 10); // read num as normal number
         return String.fromCharCode(num);
     });
 
-    const step2 = step1.replace(/&#x([0-9a-zA-Z]{1,4});/gi, function(match, numStr) {
+    const step2 = step1.replace(/&#x([0-9a-zA-Z]{1,4});/gi, function (match, numStr) {
         var num = parseInt(numStr, 16); // read num as normal number
         return String.fromCodePoint(num);
     });
@@ -68,7 +68,7 @@ export function fixMultiSpanTag(html: string) {
     let isItalic = false;
     let isBold = false;
 
-    return html.replace(/<([^>]+)>/ig, function(match: null, insideTag: string) {
+    return html.replace(/<([^>]+)>/ig, function (match: null, insideTag: string) {
 
         const origTag = match;
 
@@ -114,7 +114,7 @@ export function fixMultiSpanTag(html: string) {
 
 export function removeExtraTag(html: string) {
 
-    return html.replace(/<([^>]+)>/ig, function(match: null, insideTag: string) {
+    return html.replace(/<([^>]+)>/ig, function (match: null, insideTag: string) {
 
         const origTag = match;
 

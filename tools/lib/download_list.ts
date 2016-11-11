@@ -1,3 +1,9 @@
+import { http } from './net';
+import { tidyHTML, selectPart, decodeHtmlEntity, fixMultiSpanTag, removeExtraTag } from './html';
+import fs = require('fs');
+import { saveTemp } from './local-io';
+
+
 export interface DownloadSource {
     // 页面url
     url: string
@@ -45,6 +51,27 @@ export function genFilename(item: DownloadItem) {
  */
 export function genFullname(item: DownloadItem) {
     return `${item.prefix || 'HPL'}/${genFilename(item)}`;
+}
+
+export function downloadItem(item: DownloadItem): Promise<void> {
+    const saveDest = `${__dirname}/../temp/${genFullname(item)}.html`;
+
+    if (fs.existsSync(saveDest)) {
+        return Promise.reject(`${saveDest} exists. not downloading`);
+    }
+
+    const parts = item.source.map((src) => {
+        const content = http.get(src.url)
+            .then(html => Promise.all(src.selector.map(s => selectPart(s)(html))))
+            .then(selectedParts => selectedParts.join("\n\n\n"));
+        return content;
+    });
+
+    return Promise.all(parts).then((parts_html) => parts_html.join("\n"))
+        .then(decodeHtmlEntity)
+        .then((html) => {
+            saveTemp(item, html);
+        });
 }
 
 const download_list_HPL: DownloadList = [
@@ -103,6 +130,22 @@ const download_list_HPL: DownloadList = [
     * [新世纪前夜的决战 / The Battle that Ended the Century](Lovecraft/The Battle that Ended the Century.md)
     * [洞中兽 / The Beast in the Cave](Lovecraft/The Beast in the Cave.md)
     * [翻越睡梦之墙 / Beyond the Wall of Sleep](Lovecraft/Beyond the Wall of Sleep.md)
+    */
+
+    {
+        title: "Beyond The Wall of Sleep",
+        title_zh: "翻越睡梦之墙",
+
+        prefix: 'HPL',
+        source: [
+            {
+                url: 'http://trow.cc/board/index.php?showtopic=21851',
+                selector: ['#post-133081']
+            }
+        ]
+    }
+
+    /*
     * [书 / The Book](Lovecraft/The Book.md)
     * [克苏鲁的呼唤 / The Call of Cthulhu](Lovecraft/The Call of Cthulhu.md)
     * [查尔斯·迪克斯特·瓦德事件 / The Case of Charles Dexter Ward](Lovecraft/The Case of Charles Dexter Ward.md)
