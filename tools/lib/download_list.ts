@@ -137,47 +137,345 @@ const download_list_HPL: DownloadList = [
         title_zh: "翻越睡梦之墙",
 
         prefix: 'HPL',
-        source: [
-            {
-                url: 'http://trow.cc/board/index.php?showtopic=21851',
-                selector: ['#post-133081']
-            }
-        ]
-    }
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=21851',
+            selector: ['#post-133081']
+        }]
+    },
 
     /*
     * [书 / The Book](Lovecraft/The Book.md)
     * [克苏鲁的呼唤 / The Call of Cthulhu](Lovecraft/The Call of Cthulhu.md)
+    */
+    {
+        // 竹子译版
+        title: "The Call of Cthulhu",
+        title_zh: "克苏鲁的呼唤",
+        id: 'The-Call-of-Cthulhu-Frend',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=23806',
+            selector: ['#post-144875']
+        }],
+    },
+
+    /*
     * [查尔斯·迪克斯特·瓦德事件 / The Case of Charles Dexter Ward](Lovecraft/The Case of Charles Dexter Ward.md)
+    */
+    {
+        // 竹子译版
+        title: "The Case of Charles Dexter Ward",
+        title_zh: "查尔斯·迪克斯特·瓦德事件",
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=23401',
+            selector: [
+                // 开头
+                '#post-141647',
+                // Chapter I: A Result and a Prologue
+                '#post-141648',
+                // Chapter II: An Antecedent and a Horror
+                '#post-141649',
+                // Chapter III: A Search and an Evocation
+                '#post-141650',
+                // Chapter IV: A Mutation and a Madness
+                '#post-141651',
+                // Chapter V: A Nightmare and a Cataclysm
+                '#post-141652',
+                // 后记
+                '#post-141653',
+
+                // FIXME 内部有插图需要手动下载
+            ]
+        }],
+    },
+    /*
     * [乌撒的猫 / The Cats of Ulthar](Lovecraft/The Cats of Ulthar.md)
     * [塞勒菲斯 / Celephaïs](Lovecraft/Celephaïs.md)
+    */
+    {
+        title: 'The Challenge from Beyond',
+        title_zh: '彼方的挑战',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?act=ST&f=82&t=24464&st=0#entry149984',
+            selector: ['#post-149984']
+        }]
+    },
+
+    /*
     * [来自彼方的挑战 / The Challenge from Beyond](Lovecraft/The Challenge from Beyond.md)
     * [崩坏的宇宙 / Collapsing Cosmoses](Lovecraft/Collapsing Cosmoses.md)
     * [星之彩 / The Colour Out of Space](Lovecraft/The Colour Out of Space.md)
     * [寒气 / Cool Air](Lovecraft/Cool Air.md)
-    * [伏行的混沌 / The Crawling Chaos](Lovecraft/The Crawling Chaos.md)
-    * [伊格的诅咒 / The Curse of Yig](Lovecraft/The Curse of Yig.md)
-    * [达贡 / Dagon](Lovecraft/Dagon.md)
+    */
+    {
+        title: 'Cool Air',
+        title_zh: '寒气',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=20253',
+            selector: ['#post-124274']
+        }]
+    },
+
+    /* [伏行的混沌 / The Crawling Chaos](Lovecraft/The Crawling Chaos.md) */
+    {
+        title: 'The Crawling Chaos',
+        title_zh: '蠕行的混沌',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=22686',
+            selector: ['#post-137656']
+        }]
+    },
+
+    /* [伊格的诅咒 / The Curse of Yig](Lovecraft/The Curse of Yig.md) */
+    {
+        title: 'The Curse of Yig',
+        title_zh: '伊格的诅咒',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=22741',
+            selector: [
+                // 开头
+                '#post-137938',
+                // 正文
+                '#post-137939',
+                // 背景
+                '#post-137940',
+            ]
+        }]
+    },
+
+    /* [达贡 / Dagon](Lovecraft/Dagon.md)
     * [聋，哑，瞎 / Deaf, Dumb, and Blind](Lovecraft/Deaf, Dumb, and Blind.md)
     * [后裔 / The Descendant](Lovecraft/The Descendant.md)
-    * [阿隆佐·泰普尔的日记 / The Diary of Alonzo Typer](Lovecraft/The Diary of Alonzo Typer.md)
-    * [掘墓 / The Disinterment](Lovecraft/The Disinterment.md)
-    * [降临在萨尔纳斯的灾殃 / The Doom That Came to Sarnath](Lovecraft/The Doom That Came to Sarnath.md)
-    * [秘境卡达斯梦寻记 / The Dream-Quest of Unknown Kadath](Lovecraft/The Dream-Quest of Unknown Kadath.md)
-    * [魔女屋中之梦 / The Dreams in the Witch House](Lovecraft/The Dreams in the Witch House.md)
-    * [敦威治恐怖事件 / The Dunwich Horror](Lovecraft/The Dunwich Horror.md)
-    * [电刑器 / The Electric Executioner](Lovecraft/The Electric Executioner.md)
-    * [邪恶的教士 / The Evil Clergyman](Lovecraft/The Evil Clergyman.md)
-    * [来自遗忘 / Ex Oblivione](Lovecraft/Ex Oblivione.md)
+    * [阿隆佐·泰普尔的日记 / The Diary of Alonzo Typer](Lovecraft/The Diary of Alonzo Typer.md) */
+
+    /* [掘墓 / The Disinterment](Lovecraft/The Disinterment.md) */
+
+    {
+        title: 'The Disinterment',
+        title_zh: '掘墓',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=24524',
+            selector: [
+                // 全文
+                '#post-150385',
+                // 背景
+                '#post-150386',
+            ]
+        }]
+    },
+
+    /* [降临在萨尔纳斯的灾殃 / The Doom That Came to Sarnath](Lovecraft/The Doom That Came to Sarnath.md)
+    * [秘境卡达斯梦寻记 / The Dream-Quest of Unknown Kadath](Lovecraft/The Dream-Quest of Unknown Kadath.md) */
+
+    {
+        title: 'The Dream-Quest of Unknown Kadath',
+        title_zh: '梦寻秘境卡达斯',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=21628',
+            selector: [
+                // 开头
+                '#post-131797',
+                // part1
+                '#post-131798',
+                // part2
+                '#post-131799',
+                // part3
+                '#post-131800',
+                // part4
+                '#post-131801',
+                // part5
+                '#post-131802',
+                // part6
+                '#post-131803',
+                // 背景
+                '#post-131806'
+            ]
+        }]
+    },
+
+    /* [魔女屋中之梦 / The Dreams in the Witch House](Lovecraft/The Dreams in the Witch House.md) */
+    {
+        title: 'The Dreams in Witch-House',
+        title_zh: '魔女屋中之梦',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=15666',
+            selector: [
+                // part1
+                '#post-94320',
+                // part2
+                '#post-94321',
+                // part3
+                '#post-94322',
+                // 背景
+                '#post-94325',
+                // 鸣谢
+                '#post-94324'
+            ]
+        }]
+    },
+
+    /* [敦威治恐怖事件 / The Dunwich Horror](Lovecraft/The Dunwich Horror.md) */
+    {
+        title: 'The Dunwich Horror',
+        title_zh: '敦威治恐怖事件',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=16480',
+            selector: [
+                // I
+                '#post-99416',
+                // II
+                '#post-99417',
+                // III
+                '#post-99418',
+                // IV
+                '#post-99419',
+                // V
+                '#post-99420',
+                // VI
+                '#post-99421',
+                // VII
+                '#post-99422',
+                // VIII
+                '#post-99423',
+                // IX
+                '#post-99424',
+                // X
+                '#post-99425',
+            ]
+        }]
+    },
+
+    /* [电刑器 / The Electric Executioner](Lovecraft/The Electric Executioner.md) */
+    {
+        title: 'The Electric Executioner',
+        title_zh: '电刑器',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=27016',
+            selector: [
+                // 正文
+                '#post-164963',
+                // 背景
+                '#post-164964',
+            ]
+        }]
+    },
+
+    /* [邪恶的教士 / The Evil Clergyman](Lovecraft/The Evil Clergyman.md) */
+    {
+        title: 'The Evil Clergyman',
+        title_zh: '邪恶的教士',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=27499',
+            selector: [
+                // 正文
+                '#post-167781',
+                // 背景
+                '#post-167782',
+            ]
+        }]
+    },
+
+    /* [来自遗忘 / Ex Oblivione](Lovecraft/Ex Oblivione.md)
     * [关于已故亚瑟·杰尔敏及其家系的事实 / Facts Concerning the Late Arthur Jermyn and His Family](Lovecraft/Facts Concerning the Late Arthur Jermyn and His Family.md)
-    * [魔宴 / The Festival](Lovecraft/The Festival.md)
-    * [自外而来 / From Beyond](Lovecraft/From Beyond.md)
-    * [噬鬼者 / The Ghost-Eater](Lovecraft/The Ghost-Eater.md)
-    * [绿色草原 / The Green Meadow](Lovecraft/The Green Meadow.md)
-    * [夜魔 / The Haunter of the Dark](Lovecraft/The Haunter of the Dark.md)
-    * [他 / He](Lovecraft/He.md)
-    * [尸体复活者赫伯特·威斯特 / Herbert West – Reanimator](Lovecraft/Herbert West – Reanimator.md)
-    * [《死灵之书》的历史 / History of the Necronomicon](Lovecraft/History of the Necronomicon.md)
+    * [魔宴 / The Festival](Lovecraft/The Festival.md) */
+    /* [自外而来 / From Beyond](Lovecraft/From Beyond.md) */
+    {
+        title: 'From Beyond',
+        title_zh: '自外而来',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=16890',
+            selector: [
+                // 正文
+                '#post-102172',
+                // 背景
+                '#post-102173',
+            ]
+        }]
+    },
+
+    /* [噬鬼者 / The Ghost-Eater](Lovecraft/The Ghost-Eater.md)
+    * [绿色草原 / The Green Meadow](Lovecraft/The Green Meadow.md) */
+    /* [夜魔 / The Haunter of the Dark](Lovecraft/The Haunter of the Dark.md) */
+    {
+        // 竹子译版
+        title: 'The Haunter of the Dark',
+        title_zh: '夜魔',
+        id: 'The-Haunter-of-the-Dark-Frend',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=21836',
+            selector: [
+                // 开头
+                '#post-133045',
+                // 正文
+                '#post-133046',
+                // 背景
+                '#post-133047',
+            ]
+        }]
+    },
+
+    /* [他 / He](Lovecraft/He.md) */
+    {
+        title: 'He',
+        title_zh: '他',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=24153',
+            selector: [
+                // 正文
+                '#post-147558',
+                // 背景
+                '#post-147559',
+            ]
+        }]
+    },
+
+    /* [尸体复活者赫伯特·威斯特 / Herbert West – Reanimator](Lovecraft/Herbert West – Reanimator.md) */
+    {
+        title: 'Herbert West—Reanimator',
+        title_zh: '赫伯特•韦斯特 — 尸体复生者',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=28229',
+            selector: [
+                // 正文
+                '#post-171573',
+                // 背景
+                '#post-171574',
+            ]
+        }]
+    },
+
+    /* [《死灵之书》的历史 / History of the Necronomicon](Lovecraft/History of the Necronomicon.md)
     * [巫兽的宝藏 / The Hoard of the Wizard-Beast](Lovecraft/The Hoard of the Wizard-Beast.md)
     * [马丁海滩的怪物 / The Horror at Martin's Beach](Lovecraft/The Horror at Martin's Beach.md)
     * [雷德胡克的恐怖 / The Horror at Red Hook](Lovecraft/The Horror at Red Hook.md)
