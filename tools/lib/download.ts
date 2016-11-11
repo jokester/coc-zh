@@ -1,7 +1,9 @@
+import fs = require('fs');
+import { saveTransformed, readFile, saveTemp } from './local-io';
+
 import { http } from './net';
 import { tidyHTML, selectPart, decodeHtmlEntity, fixMultiSpanTag, removeExtraTag } from './html';
-import fs = require('fs');
-import { saveTemp } from './local-io';
+import { to_markdown } from './markdown';
 
 export interface DownloadSource {
     // 页面url
@@ -74,4 +76,18 @@ export function downloadItem(item: DownloadItem): Promise<void> {
         .then((html) => {
             saveTemp(item, html);
         });
+}
+
+export function convertedFileFor(item: DownloadItem) {
+    return `${__dirname}/../../${genFullname(item)}.md`;
+}
+
+export function convertItem(item: DownloadItem): Promise<void> {
+    const htmlFile = `${__dirname}/../temp/${genFullname(item)}.html`;
+
+    const saveDest = convertedFileFor(item);
+
+    return readFile(htmlFile).then(to_markdown).then((md) => saveTransformed(item, md));
+
+
 }

@@ -1,5 +1,5 @@
 import { DownloadList } from './download';
-const download_list_HPL: DownloadList = [
+export const download_list_HPL: DownloadList = [
 
     /**
      * 

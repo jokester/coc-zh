@@ -10,7 +10,6 @@ import { articles } from './lib/articles'
 import { getPostContent, bb2Markdown } from './lib/trow_bbcode';
 import { download_list } from './lib/download_list';
 import { downloadItem } from './lib/download';
-import { to_markdown } from './lib/to_markdown';
 
 function main() {
     download_list.forEach((item, itemNo) => {
