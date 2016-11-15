@@ -1,5 +1,5 @@
 import fs = require('fs');
-import { saveTransformed, readFile, saveTemp } from './local-io';
+import { saveTransformed, readFile, saveRaw } from './local-io';
 
 import { http } from './net';
 import { tidyHTML, selectPart, decodeHtmlEntity, fixMultiSpanTag, removeExtraTag } from './html';
@@ -55,11 +55,15 @@ export function genFullname(item: DownloadItem) {
     return `${item.prefix || 'HPL'}/${genFilename(item)}`;
 }
 
+function rawPathFor(item: DownloadItem) {
+    return `${__dirname}/../raw/${genFullname(item)}.html`;
+}
+
 /**
  * 下载文件 (已有时不会再次下载)
  */
 export function downloadItem(item: DownloadItem): Promise<void> {
-    const saveDest = `${__dirname}/../temp/${genFullname(item)}.html`;
+    const saveDest = rawPathFor(item);
 
     if (fs.existsSync(saveDest)) {
         return Promise.reject(`${saveDest} exists. not downloading`);
@@ -75,7 +79,7 @@ export function downloadItem(item: DownloadItem): Promise<void> {
     return Promise.all(parts).then((parts_html) => parts_html.join("\n"))
         .then(decodeHtmlEntity)
         .then((html) => {
-            saveTemp(item, html);
+            saveRaw(item, html);
         });
 }
 
@@ -84,11 +88,11 @@ export function convertedFileFor(item: DownloadItem) {
 }
 
 export function convertItem(item: DownloadItem): Promise<void> {
-    const htmlFile = `${__dirname}/../temp/${genFullname(item)}.html`;
+    const rawPath = rawPathFor(item);
 
     const saveDest = convertedFileFor(item);
 
-    return readFile(htmlFile)
+    return readFile(rawPath)
         .then(to_markdown)
         .then(filter_md)
         .then((md) => saveTransformed(item, md));

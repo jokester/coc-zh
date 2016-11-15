@@ -17,8 +17,8 @@ function writeFile(absPath: string, content: string): Promise<void> {
     });
 }
 
-export function saveTemp(item: DownloadItem, content: string) {
-    const path = `${__dirname}/../temp/${genFullname(item)}.html`;
+export function saveRaw(item: DownloadItem, content: string) {
+    const path = `${__dirname}/../raw/${genFullname(item)}.html`;
     return writeFile(path, content);
 }
 
