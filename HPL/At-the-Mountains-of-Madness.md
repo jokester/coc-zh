@@ -1,10 +1,10 @@
-At the Mountains of Madness
+## At the Mountains of Madness
 
-疯狂山脉
+## 疯狂山脉
 
-作者：H.P.Lovecraft
+#### 作者：H.P.Lovecraft
 
-笨拙的译者：竹子
+#### 笨拙的译者：竹子
 
 译者声明：
 
@@ -796,7 +796,9 @@ _[注：the protoShoggoths，注意是复数哟]_
 
 _"Tekeli-li! Tekeli-li!"_
 
-The End
+### The End
+
+---------------------
 
 This post has been edited by **Frend**: 2014-06-03, 20:10 后记:
 

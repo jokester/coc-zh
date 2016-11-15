@@ -1,10 +1,10 @@
-Beyond The Wall of Sleep
+## Beyond The Wall of Sleep
 
-翻越睡梦之墙
+## 翻越睡梦之墙
 
-原著：H·P·Lovecraft
+#### 原著：H·P·Lovecraft
 
-笨拙的译者：竹子
+#### 笨拙的译者：竹子
 
 译者声明：
 
@@ -76,6 +76,8 @@ _[注1：御夫座中的一颗双星]_
 
 _[注2：这是一颗真实存在的超新星，于1901年出现并在同年被Felipe Rivera Parra最早发现，在爆发时，该新星的亮度一度达到0.2等，之后逐渐黯淡到12至13等星。]_
 
-The End
+### The End
+
+---------------------
 
 This post has been edited by **Frend**: 2016-08-19, 22:29

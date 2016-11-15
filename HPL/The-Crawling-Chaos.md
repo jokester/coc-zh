@@ -1,12 +1,12 @@
-The Crawling Chaos
+## The Crawling Chaos
 
-蠕行的混沌
+## 蠕行的混沌
 
-原著：Elizabeth Berkeley & Lewis Theobald, Jun.
+#### 原著：Elizabeth Berkeley & Lewis Theobald, Jun.
 
 （Winifred Virginia Jackson & H. P. Lovecraft）
 
-笨拙的译者：竹子
+#### 笨拙的译者：竹子
 
 译者声明：
 
@@ -68,6 +68,8 @@ _[注4：原文为Cytharion ]_
 
 当浓烟散去，再度望向地球的时候，我只在一片冰冷星云的衬托下看见垂死的太阳与黯淡悲恸的行星们还在寻找它们的姐妹。
 
-The End
+### The End
+
+---------------------
 
 This post has been edited by **Frend**: 2012-05-08, 23:14

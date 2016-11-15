@@ -43,3 +43,19 @@
 * [He / 他](HPL/He.md)
 
 * [Herbert West—Reanimator / 赫伯特•韦斯特 — 尸体复生者](HPL/Herbert-West-Reanimator.md)
+
+* [History of the Necronomicon / 《死灵之书》的历史](HPL/History-of-the-Necronomicon.md)
+
+* [History of the Necronomicon / 《死灵之书》的历史](HPL/History-of-the-Necronomicon.md)
+
+* [The Horror at Martin's Beach / 马丁海滩的怪物](HPL/The-Horror-at-Martin-s-Beach.md)
+
+* [The Horror at Red Hook / 雷德胡克的恐怖](HPL/The-Horror-at-Red-Hook.md)
+
+* [The Horror in the Burying-Ground / 墓园里的恐怖](HPL/The-Horror-in-the-Burying-Ground.md)
+
+* [The Horror in the Museum / 蜡像馆惊魂](HPL/The-Horror-in-the-Museum.md)
+
+* [In the Vault / 地窖中](HPL/In-the-Vault.md)
+
+* [In the Walls of Eryx / 厄瑞克斯之墙](HPL/In-the-Walls-of-Eryx.md)

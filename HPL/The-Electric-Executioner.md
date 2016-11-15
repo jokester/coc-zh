@@ -1,10 +1,10 @@
-The Electric Executioner
+## The Electric Executioner
 
-电刑器
+## 电刑器
 
-原著：Adolphe de Castro & H. P. Lovecraft
+#### 原著：Adolphe de Castro & H. P. Lovecraft
 
-笨拙的译者：竹子
+#### 笨拙的译者：竹子
 
 译者声明：
 
@@ -280,7 +280,9 @@ _[注：美墨边界。]_
 
 _[注：astral projection，西方版的灵魂出窍]_
 
-The End
+### The End
+
+---------------------
 
 This post has been edited by **Frend**: 2014-07-06, 19:24 本文大概写于1929年，最早出版在1930年8月份的《Weird Tales》上。
 

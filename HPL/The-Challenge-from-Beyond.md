@@ -1,10 +1,10 @@
-The Challenge from Beyond
+## The Challenge from Beyond
 
-彼方的挑战
+## 彼方的挑战
 
-原著： C.L. Moore & A. Merritt & H.P. Lovecraft & Robert E.Howard & Frank Belknap Long
+#### 原著： C.L. Moore & A. Merritt & H.P. Lovecraft & Robert E.Howard & Frank Belknap Long
 
-笨拙的译者：竹子 & 竹子 & 竹子 & 竹子 & 竹子
+#### 笨拙的译者：竹子 & 竹子 & 竹子 & 竹子 & 竹子
 
 译者声明：
 
@@ -222,6 +222,8 @@ _[注：原文是 it will destroy itself in seeking to return to the slime from 
 
 在时空连续体的遥远彼端，那个殷红色的圆形耶库伯神明对乔治·坎贝尔如此说到。而后者已经清除了一切属于人类的欲望，此时正坐在王座上，统治着一个属于蠕虫们的帝国。他的统治将会比地球上任何一位统治人类帝国的君主更加智慧、更加和蔼、更加仁慈。
 
-The End
+### The End
+
+---------------------
 
 This post has been edited by **Frend**: 2012-12-20, 20:13

@@ -1,10 +1,10 @@
-The Disinterment
+## The Disinterment
 
-掘墓
+## 掘墓
 
-原著：Duane W. Rimel & H. P. Lovecraft
+#### 原著：Duane W. Rimel & H. P. Lovecraft
 
-笨拙的译者：竹子
+#### 笨拙的译者：竹子
 
 译者声明：
 
@@ -102,7 +102,9 @@ _[注：原文是but this will not trouble me if I can find oblivion from that w
 
 现在，我只能渴望那个原本属于我的东西；那个所有承蒙上帝赐福之人在死亡时都会拥有的东西；那个我在古老墓地中抬起棺材盖板的那个可怖瞬间里看到的东西——我渴望我那具腐烂皱缩、已经没有了头颅的身体。
 
-The End
+### The End
+
+---------------------
 
 This post has been edited by **Frend**: 2013-01-03, 23:16 本文作于1935年9月，发表于1937年1月刊的《Weird Tales》中。
 

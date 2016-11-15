@@ -1,10 +1,10 @@
-The Curse of Yig
+## The Curse of Yig
 
-伊格的诅咒
+## 伊格的诅咒
 
-原著：H.P.Lovecraft & Zealia Bishop
+#### 原著：H.P.Lovecraft & Zealia Bishop
 
-笨拙的译者：竹子
+#### 笨拙的译者：竹子
 
 译者声明：
 
@@ -216,7 +216,9 @@ _[注：原文是—not crickets, I calc’late, but summat like ’em. I’d or
 
 “它是她在九个月之后生下来。原来有三个——另两个更加可怕——但只有这一个是活着的。”
 
-The End
+### The End
+
+---------------------
 
 This post has been edited by **Frend**: 2011-12-06, 13:34 本文写于1928年，并在同年发表在《Weird Tales》上。
 
