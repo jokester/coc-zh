@@ -4,6 +4,7 @@ import { saveTransformed, readFile, saveTemp } from './local-io';
 import { http } from './net';
 import { tidyHTML, selectPart, decodeHtmlEntity, fixMultiSpanTag, removeExtraTag } from './html';
 import { to_markdown } from './markdown';
+import { filter_md } from './filters';
 
 export interface DownloadSource {
     // 页面url
@@ -87,7 +88,8 @@ export function convertItem(item: DownloadItem): Promise<void> {
 
     const saveDest = convertedFileFor(item);
 
-    return readFile(htmlFile).then(to_markdown).then((md) => saveTransformed(item, md));
-
-
+    return readFile(htmlFile)
+        .then(to_markdown)
+        .then(filter_md)
+        .then((md) => saveTransformed(item, md));
 }

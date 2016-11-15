@@ -6,7 +6,6 @@ const cookie: Object = null
 
 import { http } from './lib/net';
 import { logger_normal as logger } from './lib/util';
-import { articles } from './lib/articles';
 import { writeSummary } from './lib/local-io';
 import { convertItem, genFullname } from './lib/download';
 import { download_list, download_list_HPL } from './lib/download_list';

@@ -1,6 +1,6 @@
 import * as request from 'request';
 
-import {logger_normal, logger_silent} from './util';
+import { logger_normal as logger, logger_silent as NOTUSED, limit } from './util';
 
 // cookie str for "trow.cc" domain as in browser
 let cookie_str = "";
@@ -21,13 +21,17 @@ const cookieJar = (function () {
 
 let reqCount = 0;
 
+const requestLimited = {
+    get: limit(request.get, 3e3, 10e3),
+    post: limit(request.post, 3e3, 10e3)
+};
+
 export const http = {
     get: function (url: string, verbose?: boolean) {
-        const logger = verbose ? logger_normal : logger_silent;
         const reqNo = ++reqCount;
         return new Promise<string>((fulfill, reject) => {
             logger.i(`REQ ${reqNo}: GET ${url}`);
-            request.get({
+            requestLimited.get({
                 url: url,
                 jar: cookieJar,
                 headers: {
@@ -47,14 +51,14 @@ export const http = {
     },
 
     postForm: function (url: string, formContent: Object, verbose?: boolean) {
+        if (2 > 1) throw "deprecated";
         const reqNo = ++reqCount;
-        const logger = verbose ? logger_normal : logger_silent;
 
         return new Promise((fulfill, reject) => {
             logger.i(`REQ ${reqNo}: POST ${url}`);
             logger.i(`REQ ${reqNo}: POST form = ${JSON.stringify(formContent)}`);
 
-            request.post({
+            requestLimited.post({
                 url: url,
                 jar: cookieJar,
                 form: formContent,

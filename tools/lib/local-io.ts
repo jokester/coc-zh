@@ -8,7 +8,7 @@ function writeFile(absPath: string, content: string): Promise<void> {
     return new Promise(function (fulfill, reject) {
         fs.writeFile(absPath, content, function (err) {
             if (err) {
-                logger.w(``)
+                logger.w(`error writing ${absPath}`);
                 reject(err);
             }
             else

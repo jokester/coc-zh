@@ -1,5 +1,5 @@
 /**
- * Converts TROW bbcode to markdown
+ * Converts TROW bbcode to markdown (deprecated)
  */
 import { Map } from 'immutable';
 import * as cheerio from 'cheerio';

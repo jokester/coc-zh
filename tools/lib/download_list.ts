@@ -398,21 +398,145 @@ export const download_list_HPL: DownloadList = [
         }]
     },
 
-    /* [《死灵之书》的历史 / History of the Necronomicon](Lovecraft/History of the Necronomicon.md)
-    * [巫兽的宝藏 / The Hoard of the Wizard-Beast](Lovecraft/The Hoard of the Wizard-Beast.md)
-    * [马丁海滩的怪物 / The Horror at Martin's Beach](Lovecraft/The Horror at Martin's Beach.md)
-    * [雷德胡克的恐怖 / The Horror at Red Hook](Lovecraft/The Horror at Red Hook.md)
-    * [墓园里的恐怖 / The Horror in the Burying-Ground](Lovecraft/The Horror in the Burying-Ground.md)
-    * [蜡像馆惊魂 / The Horror in the Museum](Lovecraft/The Horror in the Museum.md)
-    * [猎犬 / The Hound](Lovecraft/The Hound.md)
-    * [休普诺斯 / Hypnos](Lovecraft/Hypnos.md)
-    * [伊比德 / Ibid](Lovecraft/Ibid.md) -->
-    * [地窖中 / In the Vault](Lovecraft/In-the-Vault.md)
+    /* [《死灵之书》的历史 / History of the Necronomicon](Lovecraft/History of the Necronomicon.md) */
+    {
+        title: 'History of the Necronomicon',
+        title_zh: '《死灵之书》的历史',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=15904',
+            selector: [
+                // 正文
+                '#post-95715',
+                // 背景
+                '#post-95716',
+            ]
+        }]
+    },
+
+    /* [巫兽的宝藏 / The Hoard of the Wizard-Beast](Lovecraft/The Hoard of the Wizard-Beast.md)*/
+    {
+        title: 'History of the Necronomicon',
+        title_zh: '《死灵之书》的历史',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=15904',
+            selector: [
+                // 正文
+                '#post-95715',
+                // 背景
+                '#post-95716',
+            ]
+        }]
+    },
+    /* [马丁海滩的怪物 / The Horror at Martin's Beach](Lovecraft/The Horror at Martin's Beach.md) */
+    {
+        title: "The Horror at Martin's Beach",
+        title_zh: '马丁海滩的怪物',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=24043',
+            selector: [
+                // 正文
+                '#post-146679',
+                // 背景
+                '#post-146680',
+            ]
+        }]
+    },
+
+    /* [雷德胡克的恐怖 / The Horror at Red Hook](Lovecraft/The Horror at Red Hook.md) */
+    {
+        title: "The Horror at Red Hook",
+        title_zh: '雷德胡克的恐怖',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=25774',
+            selector: [
+                // 正文
+                '#post-157946',
+                // 背景
+                '#post-157947',
+            ]
+        }]
+    },
+
+    /* [墓园里的恐怖 / The Horror in the Burying-Ground](Lovecraft/The Horror in the Burying-Ground.md) */
+    {
+        title: "The Horror in the Burying-Ground",
+        title_zh: '墓园里的恐怖',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=25143',
+            selector: [
+                // 正文
+                '#post-154034',
+                // 背景
+                '#post-154035',
+            ]
+        }]
+    },
+
+    /* [蜡像馆惊魂 / The Horror in the Museum](Lovecraft/The Horror in the Museum.md) */
+    {
+        title: "The Horror in the Museum",
+        title_zh: '蜡像馆惊魂',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=22389',
+            selector: [
+                // 正文
+                '#post-135634',
+                // 背景
+                '#post-135635',
+            ]
+        }]
+    },
+
+    /* [猎犬 / The Hound](Lovecraft/The Hound.md) TODO 译者cimar
+    * [休普诺斯 / Hypnos](Lovecraft/Hypnos.md) TODO 译者玖羽
+    * [伊比德 / Ibid](Lovecraft/Ibid.md) TODO 译者玖羽
+    * [地窖中 / In the Vault](Lovecraft/In-the-Vault.md) */
+    {
+        title: "In the Vault",
+        title_zh: '地窖中',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=28115',
+            selector: [
+                // 正文
+                '#post-170920',
+                // 背景
+                '#post-170921',
+            ]
+        }]
+    },
     
-    <!--
-    
-    * [厄瑞克斯之墙 / In the Walls of Eryx](Lovecraft/In the Walls of Eryx.md)
-    * [最终测试 / The Last Test](Lovecraft/The Last Test.md)
+    /* [厄瑞克斯之墙 / In the Walls of Eryx](Lovecraft/In the Walls of Eryx.md) */
+    {
+        title: "In the Walls of Eryx",
+        title_zh: '厄瑞克斯之墙',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=22240',
+            selector: [
+                // 正文
+                '#post-134833',
+                // 背景
+                '#post-134834',
+            ]
+        }]
+    },
+
+    /* [最终测试 / The Last Test](Lovecraft/The Last Test.md)
     * [小玻璃瓶 / The Little Glass Bottle](Lovecraft/The Little Glass Bottle.md)
     * [可爱的死者 / The Loved Dead](Lovecraft/The Loved Dead.md)
     * [潜伏的恐惧 / The Lurking Fear](Lovecraft/The Lurking Fear.md)

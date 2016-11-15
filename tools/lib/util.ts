@@ -32,3 +32,45 @@ export const logger_silent: Logger = {
     v(arg1?: any, arg2?: any, ang3?: any) { },
     e(arg1?: any, arg2?: any, ang3?: any) { },
 }
+
+/**
+ * Warning: unhandled exception thrown by `fun` may stop node process
+ */
+export function limit<T extends Function>(fun: T, interval: number, releaseAfter: number): T {
+
+    let releaseTimer: number = null;
+    let lastCallAt = -1;
+    let lastCheck = 0;
+
+    const queuedArgs = [] as any[][];
+
+    function now() {
+        return (new Date()).getTime();
+    }
+
+    // timer: run at 
+    const checkTimer = setInterval(function () {
+        const checkAt = lastCheck = now();
+
+        const arg = queuedArgs.shift();
+
+        if (arg !== undefined) {
+            lastCallAt = checkAt;
+            setTimeout(function () {
+                fun.apply(null, arg);
+            });
+        }
+
+        if (lastCheck - lastCallAt > releaseAfter) {
+            clearInterval(checkTimer);
+        }
+    }, interval);
+
+    // queue args and return immediately
+    const decorated = function () {
+        const args = Array.from(arguments);
+        queuedArgs.push(args);
+    }
+
+    return decorated as any as T;
+}
