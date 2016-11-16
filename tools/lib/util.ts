@@ -74,3 +74,32 @@ export function limit<T extends Function>(fun: T, interval: number, releaseAfter
 
     return decorated as any as T;
 }
+
+export class ArrayM<T> {
+    constructor(private array: T[]) { }
+
+    /**
+     * >>=
+     */
+    bind<T2>(action: (v: T, index?: number) => T2[]): ArrayM<T2> {
+        let result = [] as T2[];
+
+        this.array.forEach((v, i) => {
+            const r = action(v, i);
+            result = result.concat(r);
+        })
+
+        return new ArrayM(result);
+    }
+
+    /**
+     * map
+     */
+    map<T2>(iteratee: (v: T, index?: number) => T2): ArrayM<T2> {
+        return new ArrayM(this.array.map(iteratee));
+    }
+
+    toArray() {
+        return this.array.slice();
+    }
+}

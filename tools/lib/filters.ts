@@ -1,4 +1,5 @@
 import { download_list } from './download_list';
+import { ArrayM } from './util';
 
 /**
  * >>= for Array monad
@@ -21,7 +22,10 @@ export function filter_md(md: string): string {
     // non-empty lines from md
     const lines = md.split(/[\r\n]+/);
 
-    const newLines = arrayBind(lines, format_metadata);
+    const newLines = new ArrayM(lines)
+        .bind(format_metadata)
+        .toArray();
+
     return newLines.join("\n\n") + "\n";
 }
 
@@ -35,7 +39,7 @@ function title_exists(title: string) {
     return found;
 }
 
-// 识别元数据(标题/作者/译者) 并加上 (见 `/TypeSetting.md` )
+// 识别元数据(标题/作者/译者) 并设为# (见 `/TypeSetting.md` )
 function format_metadata(line: string, lineNo: number): string[] {
     if (lineNo < 5 && title_exists(line)) {
         return [`## ${line}`];
