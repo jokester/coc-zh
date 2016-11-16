@@ -46,7 +46,7 @@
 
 * [History of the Necronomicon / 《死灵之书》的历史](HPL/History-of-the-Necronomicon.md)
 
-* [History of the Necronomicon / 《死灵之书》的历史](HPL/History-of-the-Necronomicon.md)
+* [The Hoard of the Wizard-Beast / 巫兽的宝藏](HPL/The-Hoard-of-the-Wizard-Beast.md)
 
 * [The Horror at Martin's Beach / 马丁海滩的怪物](HPL/The-Horror-at-Martin-s-Beach.md)
 

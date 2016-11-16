@@ -417,17 +417,17 @@ export const download_list_HPL: DownloadList = [
 
     /* [巫兽的宝藏 / The Hoard of the Wizard-Beast](Lovecraft/The Hoard of the Wizard-Beast.md)*/
     {
-        title: 'History of the Necronomicon',
-        title_zh: '《死灵之书》的历史',
+        title: 'The Hoard of the Wizard-Beast',
+        title_zh: '巫兽的宝藏',
 
         prefix: 'HPL',
         source: [{
-            url: 'http://trow.cc/board/index.php?showtopic=15904',
+            url: 'http://trow.cc/board/index.php?showtopic=24575',
             selector: [
                 // 正文
-                '#post-95715',
+                '#post-150729',
                 // 背景
-                '#post-95716',
+                '#post-150730',
             ]
         }]
     },
