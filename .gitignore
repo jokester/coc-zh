@@ -1,2 +1,4 @@
+# files listed in .gitignore WILL NOT be included in gitbook output (_book)
 node_modules
 /_book
+/tools
