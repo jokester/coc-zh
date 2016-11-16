@@ -17,7 +17,7 @@ function main() {
 
         convertItem(item)
             .then(() => {
-                logger.i(`INFO: converted ${itemDesc}`);
+                logger.i(`converted ${itemDesc}`);
             })
             .catch((e) => {
                 logger.e(`error downloading ${itemDesc}`)
@@ -45,7 +45,7 @@ function summary() {
 
     writeSummary(summary)
         .then(() => {
-            logger.i(`INFO: SUMMARY.md generated`);
+            logger.i(`SUMMARY.md generated`);
         })
         .catch((e) => {
             logger.e(`error generating SUMMARY.md`)

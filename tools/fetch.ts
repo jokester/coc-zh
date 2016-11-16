@@ -15,7 +15,7 @@ function main() {
         const itemDesc = `item#${itemNo}: ${item.title} / ${item.title_zh}`;
 
         downloadItem(item)
-            .then(logger.i.bind(null, `saved ${itemDesc}`))
+            .then( () => logger.i(`saved ${itemDesc}`) )
             .catch(logger.w);
     })
 }
