@@ -59,3 +59,11 @@
 * [In the Vault / 地窖中](HPL/In-the-Vault.md)
 
 * [In the Walls of Eryx / 厄瑞克斯之墙](HPL/In-the-Walls-of-Eryx.md)
+
+* [The Last Test / 最终测试](HPL/The-Last-Test.md)
+
+* [The Little Glass Bottle / 小玻璃瓶](HPL/The-Little-Glass-Bottle.md)
+
+* [Medusa’s Coil / 美杜莎的卷发](HPL/Medusa-s-Coil.md)
+
+* [The Mound / 丘](HPL/The-Mound.md)

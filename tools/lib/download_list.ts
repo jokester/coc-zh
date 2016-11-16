@@ -518,7 +518,7 @@ export const download_list_HPL: DownloadList = [
             ]
         }]
     },
-    
+
     /* [厄瑞克斯之墙 / In the Walls of Eryx](Lovecraft/In the Walls of Eryx.md) */
     {
         title: "In the Walls of Eryx",
@@ -536,16 +536,110 @@ export const download_list_HPL: DownloadList = [
         }]
     },
 
-    /* [最终测试 / The Last Test](Lovecraft/The Last Test.md)
-    * [小玻璃瓶 / The Little Glass Bottle](Lovecraft/The Little Glass Bottle.md)
-    * [可爱的死者 / The Loved Dead](Lovecraft/The Loved Dead.md)
+    /* [最终测试 / The Last Test](Lovecraft/The Last Test.md) */
+    {
+        title: "The Last Test",
+        title_zh: '最终测试',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=26438',
+            selector: [
+                // I
+                '#post-161685',
+                // II
+                '#post-161686',
+                // III
+                '#post-161687',
+                // IV
+                '#post-161688',
+                // V
+                '#post-161689',
+                // 背景
+                '#post-161690'
+            ]
+        }]
+    },
+
+    /* [小玻璃瓶 / The Little Glass Bottle](Lovecraft/The Little Glass Bottle.md) */
+    {
+        title: "The Little Glass Bottle",
+        title_zh: '小玻璃瓶',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=22696',
+            selector: [
+                // 正文
+                '#post-137715',
+                // 背景
+                '#post-155832'
+            ]
+        }]
+
+        // TODO 玖羽翻译
+    },
+    /* [可爱的死者 / The Loved Dead](Lovecraft/The Loved Dead.md)
     * [潜伏的恐惧 / The Lurking Fear](Lovecraft/The Lurking Fear.md)
     * [石像 / The Man of Stone](Lovecraft/The Man of Stone.md)
-    * [美杜莎的卷发 / Medusa's Coil](Lovecraft/Medusa's Coil.md)
-    * [记忆 / Memory](Lovecraft/Memory.md)
+    * [美杜莎的卷发 / Medusa's Coil](Lovecraft/Medusa's Coil.md) */
+    {
+        title: "Medusa’s Coil",
+        title_zh: '美杜莎的卷发',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=24859',
+            selector: [
+                // I
+                '#post-152205',
+                // II
+                '#post-152206',
+                // III
+                '#post-152207',
+                // IV
+                '#post-152208',
+                // V
+                '#post-152209',
+                // VI
+                '#post-152210',
+                // 背景
+                '#post-152211',
+            ]
+        }]
+    },
+    /* [记忆 / Memory](Lovecraft/Memory.md)
     * [月之沼 / The Moon-Bog](Lovecraft/The Moon-Bog.md)
-    * [丘 / The Mound](Lovecraft/The Mound.md)
-    * [埃里奇·赞之曲 / The Music of Erich Zann](Lovecraft/The Music of Erich Zann.md)
+    * [丘 / The Mound](Lovecraft/The Mound.md) */
+    {
+        title: "The Mound",
+        title_zh: '丘',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=20897',
+            selector: [
+                // 背景
+                '#post-127713',
+                // I
+                '#post-127714',
+                // II
+                '#post-127715',
+                // III
+                '#post-127716',
+                // IV
+                '#post-127717',
+                // V
+                '#post-127718',
+                // VI
+                '#post-127719',
+                // VII
+                '#post-127720',
+            ]
+        }]
+    },
+
+    /* [埃里奇·赞之曲 / The Music of Erich Zann](Lovecraft/The Music of Erich Zann.md)
     * [神秘船 / The Mysterious Ship](Lovecraft/The Mysterious Ship.md)
     * [墓园之谜 / The Mystery of the Grave-Yard](Lovecraft/The Mystery of the Grave-Yard.md)
     * [无名都市 / The Nameless City](Lovecraft/The Nameless City.md)
