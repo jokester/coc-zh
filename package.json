@@ -22,7 +22,8 @@
   "author": [
     "Wang Guan <momocraft@gmail.com>"
   ],
-  "license": "MIT and private",
+  "license": "UNLICENSED",
+  "private": true,
   "bugs": {
     "url": "https://github.com/jokester/coc-zh/issues"
   },
