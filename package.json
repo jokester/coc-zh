@@ -28,15 +28,17 @@
     "url": "https://github.com/jokester/coc-zh/issues"
   },
   "homepage": "https://github.com/jokester/coc-zh#readme",
-  "devDependencies": {
+  "dependencies": {
     "gitbook-cli": "^2.3.0",
+    "ts-node": "^1.6.0",
+    "typescript": "^2.0.3"
+  },
+  "devDependencies": {
     "@types/cheerio": "^0.17.31",
     "@types/request": "0.0.32",
     "cheerio": "^0.22.0",
     "libtidy": "^0.3.2",
     "request": "^2.76.0",
-    "to-markdown": "^3.0.3",
-    "ts-node": "^1.6.0",
-    "typescript": "^2.0.3"
+    "to-markdown": "^3.0.3"
   }
 }
