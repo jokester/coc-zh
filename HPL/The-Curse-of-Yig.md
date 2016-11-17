@@ -4,7 +4,7 @@
 
 #### 原著：H.P.Lovecraft & Zealia Bishop
 
-#### 笨拙的译者：竹子
+#### 译者：竹子
 
 译者声明：
 

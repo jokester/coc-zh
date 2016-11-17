@@ -1,10 +1,10 @@
-**In the Walls of Eryx**
+## In the Walls of Eryx
 
 ## 厄瑞克斯之墙
 
 #### 原著：Kenneth Sterling & H·P·Lovecraft
 
-#### 笨拙的译者：竹子
+#### 译者：竹子
 
 译者声明：
 

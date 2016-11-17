@@ -1,10 +1,10 @@
 ## The Dream-Quest of Unknown Kadath
 
-**梦寻秘境卡达斯**
+## 梦寻秘境卡达斯
 
 #### 原著：H.P.Lovecraft
 
-#### 笨拙的译者：竹子
+#### 译者：竹子
 
 [![Attached Image](/board/uploads/post-13618-1302066295.jpg)](/board/uploads/post-13618-1302066295.jpg)
 

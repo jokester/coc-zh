@@ -6,7 +6,7 @@
 
 （Winifred Virginia Jackson & H. P. Lovecraft）
 
-#### 笨拙的译者：竹子
+#### 译者：竹子
 
 译者声明：
 

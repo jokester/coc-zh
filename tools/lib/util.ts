@@ -5,7 +5,7 @@ interface Logger {
     v(arg1?: any, arg2?: any, ang3?: any): void
 }
 
-const minLogLevel = 0;
+const minLogLevel = 1;
 export const logger_normal: Logger = {
 
     // e: ERROR (lvl=3)

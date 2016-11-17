@@ -4,7 +4,7 @@
 
 #### 原著： C.L. Moore & A. Merritt & H.P. Lovecraft & Robert E.Howard & Frank Belknap Long
 
-#### 笨拙的译者：竹子 & 竹子 & 竹子 & 竹子 & 竹子
+#### 译者：竹子 & 竹子 & 竹子 & 竹子 & 竹子
 
 译者声明：
 

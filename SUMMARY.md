@@ -67,3 +67,11 @@
 * [Medusa’s Coil / 美杜莎的卷发](HPL/Medusa-s-Coil.md)
 
 * [The Mound / 丘](HPL/The-Mound.md)
+
+* [The Music of Erich Zann / 埃里奇·赞之曲](HPL/The-Music-of-Erich-Zann.md)
+
+* [The Nameless City / 无名之城](HPL/The-Nameless-City.md)
+
+* [Old Bugs / 老臭虫](HPL/Old-Bugs.md)
+
+* [Out of the Aeons / 超越万古](HPL/Out-of-the-Aeons.md)
