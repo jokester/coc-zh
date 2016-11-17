@@ -6,7 +6,7 @@ const cookie: Object = null
 
 import { http } from './lib/net';
 import { logger_normal as logger } from './lib/util';
-import { writeSummary } from './lib/local-io';
+import { saveSummary } from './lib/local-io';
 import { convertItem, genFullname } from './lib/download';
 import { download_list, download_list_HPL } from './lib/download_list';
 
@@ -43,10 +43,8 @@ function summary() {
 
     const summary = summary_lines_prefix.concat(summary_lines_hpl).join("\n\n");
 
-    writeSummary(summary)
-        .then(() => {
-            logger.i(`SUMMARY.md generated`);
-        })
+    saveSummary(summary)
+        .then(() => logger.i(`SUMMARY.md generated`) )
         .catch((e) => {
             logger.e(`error generating SUMMARY.md`)
             logger.e(e);

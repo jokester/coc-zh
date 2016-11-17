@@ -17,11 +17,6 @@ function writeFile(absPath: string, content: string): Promise<void> {
     });
 }
 
-export function saveRaw(item: DownloadItem, content: string) {
-    const path = `${__dirname}/../raw/${genFullname(item)}.html`;
-    return writeFile(path, content);
-}
-
 export function readFile(filename: string): Promise<string> {
     return new Promise((resolve, reject) => {
         fs.readFile(filename, 'utf-8', function (err, html) {
@@ -33,11 +28,16 @@ export function readFile(filename: string): Promise<string> {
     });
 }
 
-export function saveTransformed(item: DownloadItem, content: string) {
-    const path = `${__dirname}/../../${genFullname(item)}.md`;
+export function saveRaw(item: DownloadItem, content: string) {
+    const path = `${__dirname}/../raw/${genFullname(item)}.html`;
     return writeFile(path, content);
 }
 
-export function writeSummary(content: string) {
-    return writeFile(`${__dirname}/../../SUMMARY.md`, content);
+export function saveConverted(item: DownloadItem, content: string) {
+    const path = `${__dirname}/../../content/${genFullname(item)}.md`;
+    return writeFile(path, content);
+}
+
+export function saveSummary(content: string) {
+    return writeFile(`${__dirname}/../../content/SUMMARY.md`, content);
 }

@@ -1,4 +1,5 @@
 {
     "title": "克苏鲁神话",
-    "language": "zh"
+    "language": "zh",
+    "root": "./content"
 }

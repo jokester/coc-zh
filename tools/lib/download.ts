@@ -1,5 +1,5 @@
 import fs = require('fs');
-import { saveTransformed, readFile, saveRaw } from './local-io';
+import { saveConverted, readFile, saveRaw } from './local-io';
 
 import { http } from './net';
 import { tidyHTML, selectPart, decodeHtmlEntity, fixMultiSpanTag, removeExtraTag } from './html';
@@ -83,17 +83,11 @@ export function downloadItem(item: DownloadItem): Promise<void> {
         });
 }
 
-export function convertedFileFor(item: DownloadItem) {
-    return `${__dirname}/../../${genFullname(item)}.md`;
-}
-
 export function convertItem(item: DownloadItem): Promise<void> {
     const rawPath = rawPathFor(item);
-
-    const saveDest = convertedFileFor(item);
 
     return readFile(rawPath)
         .then(to_markdown)
         .then(filter_md)
-        .then((md) => saveTransformed(item, md));
+        .then((md) => saveConverted(item, md));
 }
