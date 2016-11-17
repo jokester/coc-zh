@@ -4,6 +4,8 @@
 import { Map } from 'immutable';
 import * as cheerio from 'cheerio';
 
+throw "deprecated";
+
 module BBParse {
     // a span without newline in it
     export interface Span {

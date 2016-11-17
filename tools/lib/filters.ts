@@ -2,21 +2,7 @@ import { download_list } from './download_list';
 import { ArrayM } from './util';
 
 /**
- * >>= for Array monad
- */
-function arrayBind<T>(array: T[], transformer: (i: T, lineNo?: number) => T[]): T[] {
-    let result: T[] = [];
-
-    array.forEach((value, index) => {
-        const p = transformer(value, index);
-        result = result.concat(p);
-    });
-
-    return result;
-}
-
-/**
- * #### 
+ * 修正html转换成的md的格式
  */
 export function filter_md(md: string): string {
     // non-empty lines from md
@@ -86,4 +72,9 @@ function fix_title(line: string, lineNo: number): string {
         return matched[1];
 
     return line;
+}
+
+//
+function filter_trow_edit(line: string, lineNo: number): string {
+    This post has been edited by **Frend**: 2015-08-09, 12:39
 }
