@@ -639,16 +639,95 @@ export const download_list_HPL: DownloadList = [
         }]
     },
 
-    /* [埃里奇·赞之曲 / The Music of Erich Zann](Lovecraft/The Music of Erich Zann.md)
-    * [神秘船 / The Mysterious Ship](Lovecraft/The Mysterious Ship.md)
-    * [墓园之谜 / The Mystery of the Grave-Yard](Lovecraft/The Mystery of the Grave-Yard.md)
-    * [无名都市 / The Nameless City](Lovecraft/The Nameless City.md)
-    * [夜之洋 / The Night Ocean](Lovecraft/The Night Ocean.md)
-    * [奈亚拉托提普 / Nyarlathotep](Lovecraft/Nyarlathotep.md)
-    * [老臭虫 / Old Bugs](Lovecraft/Old Bugs.md)
-    * [蕃神 / The Other Gods](Lovecraft/The Other Gods.md)
-    * [超越万古 / Out of the Aeons](Lovecraft/Out of the Aeons.md)
-    * [异乡人 / The Outsider](Lovecraft/The Outsider.md)
+    /* [埃里奇·赞之曲 / The Music of Erich Zann](Lovecraft/The Music of Erich Zann.md) */
+    {
+        title: "The Music of Erich Zann",
+        title_zh: '埃里奇·赞之曲',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=20511',
+            selector: [
+                // 正文
+                '#post-125760',
+                // 背景
+                '#post-125761'
+            ]
+        }]
+    },
+
+    /*
+      [神秘船 / The Mysterious Ship](Lovecraft/The Mysterious Ship.md)
+      [墓园之谜 / The Mystery of the Grave-Yard](Lovecraft/The Mystery of the Grave-Yard.md)
+      [隐秘的洞穴，或约翰·李的冒险 / The Secret Cave or John Lees Adventure](Lovecraft/The Secret Cave or John Lees Adventure.md)
+      TODO 这3篇也是HPL童年作品，和<<小玻璃瓶>>是同一帖子，应分成3个md
+    */
+    
+    /* [无名都市 / The Nameless City](Lovecraft/The Nameless City.md) */
+    {
+        title: "The Nameless City",
+        title_zh: '无名之城',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=20008',
+            selector: [
+                // 正文
+                '#post-122960',
+                // 背景
+                '#post-122961'
+            ]
+        }]
+    },
+    
+    /* [夜之洋 / The Night Ocean](Lovecraft/The Night Ocean.md)
+    * [奈亚拉托提普 / Nyarlathotep](Lovecraft/Nyarlathotep.md) */
+
+    /* [老臭虫 / Old Bugs](Lovecraft/Old Bugs.md) */
+    {
+        title: "Old Bugs",
+        title_zh: '老臭虫',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=25138',
+            selector: [
+                // 正文
+                '#post-154022',
+                // 背景
+                '#post-154023'
+            ]
+        }]
+    },
+
+    /* [蕃神 / The Other Gods](Lovecraft/The Other Gods.md) */
+
+    /* [超越万古 / Out of the Aeons](Lovecraft/Out of the Aeons.md) */
+    {
+        title: "Out of the Aeons",
+        title_zh: '超越万古',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=22841',
+            selector: [
+                // I
+                '#post-138569',
+                // II
+                '#post-138570',
+                // III
+                '#post-138571',
+                // VI
+                '#post-138572',
+                // V
+                '#post-138573',
+                // VI
+                '#post-138574',
+            ]
+        }]
+    },
+
+    /* [异乡人 / The Outsider](Lovecraft/The Outsider.md)
     * [皮克曼的模特 / Pickman's Model](Lovecraft/Pickman's Model.md)
     -->
     * [屋中画 / The Picture in the House](/HPL/The-Picture-in-the-House.md)
@@ -659,7 +738,6 @@ export const download_list_HPL: DownloadList = [
     * [伊拉农的探求 / The Quest of Iranon](Lovecraft/The Quest of Iranon.md)
     * [墙中之鼠 / The Rats in the Walls](Lovecraft/The Rats in the Walls.md)
     * [回忆塞缪尔·约翰逊博士 / A Reminiscence of Dr. Samuel Johnson](Lovecraft/A Reminiscence of Dr. Samuel Johnson.md)
-    * [隐秘的洞穴，或约翰·李的冒险 / The Secret Cave or John Lees Adventure](Lovecraft/The Secret Cave or John Lees Adventure.md)
     * [超越时间之影 / The Shadow Out of Time](Lovecraft/The Shadow Out of Time.md)
     * [印斯茅斯之影 / The Shadow Over Innsmouth](Lovecraft/The Shadow Over Innsmouth.md)
     * [畏避之屋 / The Shunned House](Lovecraft/The Shunned House.md)
