@@ -1,7 +1,9 @@
 # 克苏鲁神话 中文合集
 
-* 源文件: [github](https://github.com/jokester/coc-zh)
 * 最新版(包括在线阅读，pdf/epub/mobi下载): [gitbook](https://www.gitbook.com/book/jokester/coc-zh/details)
+* 镜像:
+    - 在线阅读 [https](https://coc-zh.jokester.io) / [http](http://coc-zh.jokester.io)
+* 源文件: [github](https://github.com/jokester/coc-zh)
 
 ## 添加或更新内容
 
@@ -15,4 +17,7 @@
 
 ## LICENSE
 
-所有权利属于作者和译者。
+译文的所有权利属于作者和译者。
+
+仅有 `/tools` 的许可是MIT
+

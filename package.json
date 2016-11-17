@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "gitbook serve",
-    "build": "gitbook build"
+    "build": "gitbook build",
+    "fetch": "ts-node tools/fetch.ts",
+    "convert": "ts-node tools/convert.ts"
   },
   "repository": {
     "type": "git",
@@ -17,13 +19,23 @@
     "coc",
     "novel"
   ],
-  "author": "",
-  "license": "ISC",
+  "author": [
+    "Wang Guan <momocraft@gmail.com>"
+  ],
+  "license": "MIT and private",
   "bugs": {
     "url": "https://github.com/jokester/coc-zh/issues"
   },
   "homepage": "https://github.com/jokester/coc-zh#readme",
-  "dependencies": {
-    "gitbook-cli": "^2.3.0"
+  "devDependencies": {
+    "gitbook-cli": "^2.3.0",
+    "@types/cheerio": "^0.17.31",
+    "@types/request": "0.0.32",
+    "cheerio": "^0.22.0",
+    "libtidy": "^0.3.2",
+    "request": "^2.76.0",
+    "to-markdown": "^3.0.3",
+    "ts-node": "^1.6.0",
+    "typescript": "^2.0.3"
   }
 }
