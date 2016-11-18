@@ -118,7 +118,7 @@ _[注：“Ave, Caesar, moriturus te saluto!”，这是古罗马时期角斗士
 
 ---------------------
 
-This post has been edited by **Frend**: 2016-09-26, 23:13 本文写于1919年6月，后来在1959年阿卡姆出版社出版The Shuttered Room and Other Pieces时将之收录其中。
+本文写于1919年6月，后来在1959年阿卡姆出版社出版The Shuttered Room and Other Pieces时将之收录其中。
 
 当时，洛夫克拉夫特的朋友阿尔弗德·加尔平声称想在禁酒令（1920）生效前尝尝酒精的味道，作为一个滴酒不沾的禁酒主义者，洛夫克拉夫特即兴创作了此文向朋友表达了自己的态度。
 

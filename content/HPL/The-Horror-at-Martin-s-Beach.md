@@ -78,8 +78,6 @@
 
 ---------------------
 
-This post has been edited by **Frend**: 2012-10-11, 12:44
-
 本文写于1922年，最初发表在23年的Weird Tales上，最早的名字叫做《看不见的怪物（The Invisible Monster）》。
 
 比较有意思的是本文的作者——Sonia H. Greene，当时她与洛夫克拉夫特认识不到一年，不过在两年后（1924年）她便嫁给了洛夫克拉夫特……

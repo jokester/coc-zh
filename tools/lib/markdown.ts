@@ -1,6 +1,9 @@
 const toMarkdown = require('to-markdown') as (html: string, options?: any) => string;
 
-import { tidyHTML, selectPart, decodeHtmlEntity, fixMultiSpanTag, removeExtraTag } from './html';
+import {
+    tidyHTML, selectPart, decodeHtmlEntity,
+    fixMultiSpanTag, removeExtraTag, appendBRafterEditSpan
+} from './html';
 
 const convertB = {
     filter: ['br'],
@@ -13,6 +16,7 @@ export function to_markdown(html: string): Promise<string> {
 
     return Promise.resolve(html)
         .then(fixMultiSpanTag)
+        .then(appendBRafterEditSpan)
         .then(removeExtraTag)
         .then(htm => toMarkdown(htm, { converters: [convertB] }));
 }

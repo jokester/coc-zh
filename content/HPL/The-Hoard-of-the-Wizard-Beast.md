@@ -46,7 +46,7 @@ _[注6：a giver of judgments，准确翻译应该是“公正给予者”，此
 
 约尔登犹犹豫豫地讲述了自己的不幸使命，并向奥恩寻求建议；在说话时，他以极尽所能地表达了自己的阿谀奉承。接着，他焦虑等待着神谕者的回应。在整洁干净地吃完自己的食物后，奥恩抬起三只微红色的眼睛看了看约尔登，然后以一种极其坚决地语气回应到：
 
- **“Gumay ere hfotuol leheht teg.”**
+ **“Gumay ere hfotuol leheht teg.”** 
 
 在这之后，一团粉红色的烟雾似乎从帷幕后方侍僧们所在地方飘了出来。接着，奥恩突然消失在了这团粉红色的烟雾里。随后，侍僧们离开了自己藏身的角落，走上前来，对约尔登说：“您简短叙述的可悲境遇让神明感到满意，因此吾等有幸向您转达它的旨意。你所听闻的警言便是那段同样神秘的谚语‘追随汝之宿命’，或者更恰当的解释是，你要去杀死巫兽安阿萨斯，用传说中属于它的宝藏补偿金库的损失。”
 
@@ -90,7 +90,7 @@ _[注：原文是个插入语，mighty in necromantic horror，有点说不清�
 
 ---------------------
 
-This post has been edited by **Frend**: 2013-01-18, 22:55 这个故事写于1933年，但一直没有发表，直到1994年S.T.Joshi将它收录在了R.H.Barlow的小说集《The Hoard of the Wizard-Beast and One Other》里。本文可能是一篇娱乐之作，留下的只是一些手稿而已——按照Barlow与Lovecraft合作的一贯规律，应该是Barlow写了底稿，然后寄给Lovecraft进行修订和丰满的结果。
+这个故事写于1933年，但一直没有发表，直到1994年S.T.Joshi将它收录在了R.H.Barlow的小说集《The Hoard of the Wizard-Beast and One Other》里。本文可能是一篇娱乐之作，留下的只是一些手稿而已——按照Barlow与Lovecraft合作的一贯规律，应该是Barlow写了底稿，然后寄给Lovecraft进行修订和丰满的结果。
 
 这也是Barlow与Lovecraft合作的第一篇小说。写这篇小说的时候，他只有15岁————他在13岁的时候给Lovecraft写了第一封信，不过比较搞笑的是，根据某些资料，在1934年前往弗罗里达旅游，拜访16岁的Barlow前，Lovecraft一直以为他在和一个与自己年龄相仿（或者略微小一点）的人通信。
 
@@ -101,5 +101,3 @@ Lovecraft Podcast的两个主持在开玩笑的时候说这篇文章有一种“
 <u>» Click to show Spoiler - click again to hide... «</u>
 
 我原来以为结尾是 约尔登 变成了 巫兽
-
-This post has been edited by **Frend**: 2013-01-18, 22:58

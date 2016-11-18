@@ -106,7 +106,7 @@ _[注：原文是but this will not trouble me if I can find oblivion from that w
 
 ---------------------
 
-This post has been edited by **Frend**: 2013-01-03, 23:16 本文作于1935年9月，发表于1937年1月刊的《Weird Tales》中。
+本文作于1935年9月，发表于1937年1月刊的《Weird Tales》中。
 
 它具体创造情况，可以参考Setarium君翻译的[《洛夫克拉夫特生平第二十四章》](/forum/index.php?showtopic=23517)（紧跟着《彼方的挑战》）
 

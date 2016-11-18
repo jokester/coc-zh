@@ -72,7 +72,6 @@ export function fixMultiSpanTag(html: string) {
 
         const origTag = match;
 
-
         if (insideTag.match(/^i$/i)) {
             isItalic = true;
             return origTag;
@@ -124,10 +123,17 @@ export function removeExtraTag(html: string) {
         }
 
         // remove <span>
-        if (insideTag.match(/^span/i)) {
+        if (insideTag.match(/^\/?span/i)) {
             return '';
         }
 
         return origTag;
     });
+}
+
+export function appendBRafterEditSpan(html: string): string {
+    const context = cheerio.load(html);
+
+    context('span.edit').remove();
+    return context.html();
 }

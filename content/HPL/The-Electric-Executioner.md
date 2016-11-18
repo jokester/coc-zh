@@ -284,7 +284,7 @@ _[注：astral projection，西方版的灵魂出窍]_
 
 ---------------------
 
-This post has been edited by **Frend**: 2014-07-06, 19:24 本文大概写于1929年，最早出版在1930年8月份的《Weird Tales》上。
+本文大概写于1929年，最早出版在1930年8月份的《Weird Tales》上。
 
 这是Lovecraft与Adolphe de Castro合作的第二个故事（第一个是27年完成的《最终测试》）。由于故事不是特别出彩，而且给人一种没头没尾的感觉，所以一直没有得到重视。
 

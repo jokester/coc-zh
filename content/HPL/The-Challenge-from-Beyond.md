@@ -225,5 +225,3 @@ _[注：原文是 it will destroy itself in seeking to return to the slime from 
 ### The End
 
 ---------------------
-
-This post has been edited by **Frend**: 2012-12-20, 20:13

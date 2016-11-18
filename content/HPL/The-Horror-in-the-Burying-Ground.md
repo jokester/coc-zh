@@ -172,6 +172,6 @@ _[注2：原文是But I ain’t takin’ no stock in their stories ，原意是�
 
 ---------------------
 
-This post has been edited by **Frend**: 2013-06-10, 22:32 本文写于1933年，虽然标注是 H.P.Lovecraft 与Hazel Heald 合作作品，但实际上它基本上是 H.P.Lovecraft 为 Hazel Heald 完成的代笔作品。后来它被发表在1937年5月的《Weird Tales》上。
+本文写于1933年，虽然标注是 H.P.Lovecraft 与Hazel Heald 合作作品，但实际上它基本上是 H.P.Lovecraft 为 Hazel Heald 完成的代笔作品。后来它被发表在1937年5月的《Weird Tales》上。
 
 关于这个故事的讨论很少，因为它本身没有太多吸引人的地方。有些观点认为这是个比较无趣的故事（个人表示同意）。

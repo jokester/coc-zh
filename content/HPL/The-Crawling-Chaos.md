@@ -71,5 +71,3 @@ _[注4：原文为Cytharion ]_
 ### The End
 
 ---------------------
-
-This post has been edited by **Frend**: 2012-05-08, 23:14

@@ -36,7 +36,7 @@ function main() {
                 logger.i(`converted ${itemDesc}`);
             })
             .catch((e) => {
-                logger.e(`error downloading ${itemDesc}`)
+                logger.e(`error converting ${itemDesc}`)
                 logger.e(e);
             })
     });
