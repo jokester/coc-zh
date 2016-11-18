@@ -104,7 +104,7 @@ _[注：原文是but this will not trouble me if I can find oblivion from that w
 
 ### The End
 
----------------------
+-----------
 
 本文作于1935年9月，发表于1937年1月刊的《Weird Tales》中。
 

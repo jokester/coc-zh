@@ -111,6 +111,10 @@ export class ArrayM<T> {
         return new ArrayM(this.array.map(iteratee));
     }
 
+    tap<T2>(iteratee: (v: T[]) => T2[]): ArrayM<T2> {
+        return new ArrayM(iteratee(this.array));
+    }
+
     toArray() {
         return this.array.slice();
     }

@@ -1,6 +1,7 @@
 import { download_list } from './download_list';
 import { ArrayM } from './util';
 
+const hr = '-----------';
 /**
  * 修正html转换成的md的格式
  */
@@ -14,6 +15,7 @@ export function filter_md(md: string): string {
         .map(change_hr)
         .bind(format_parts)
         .bind(format_metadata)
+        .tap(removeConsecutiveHR)
         .toArray();
 
     return newLines.join("\n\n") + "\n";
@@ -51,14 +53,14 @@ function replace_translators(line: string, lineNo: number): string {
     return line;
 }
 
-// 给章节号加上###
+// 给章节号加上### / ----
 function format_parts(line: string, lineNo: number): string[] {
     if (line.length < 15 && /^[IVXC]+\.?$/.exec(line)) {
-        return [`### ${line}`];
+        return [hr, `### ${line}`];
     }
 
     if (/^the end/i.exec(line)) {
-        return [`### ${line}`, '---------------------'];
+        return [`### ${line}`, hr];
     }
 
     return [line];
@@ -86,10 +88,30 @@ function filter_trow_edit(line: string, lineNo: number): string {
 }
 
 // replace ———————— to ------
-
 function change_hr(line: string) {
     if (/^—{3,}$/.exec(line)) {
-        return '-----------';
+        return hr;
     }
     return line;
+}
+
+function removeConsecutiveHR(lines: string[]): string[] {
+
+    const result = [] as string[];
+
+    let prevIsHr = false;
+
+    lines.forEach((l) => {
+        if (l === hr && prevIsHr) { }
+        else if (l === hr) {
+            prevIsHr = true;
+            result.push(l);
+        } else {
+            prevIsHr = false;
+            result.push(l);
+        }
+    });
+
+
+    return result;
 }

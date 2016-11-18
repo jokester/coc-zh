@@ -218,7 +218,7 @@ _[注：原文是—not crickets, I calc’late, but summat like ’em. I’d or
 
 ### The End
 
----------------------
+-----------
 
 本文写于1928年，并在同年发表在《Weird Tales》上。
 

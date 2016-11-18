@@ -88,7 +88,7 @@ _[注：原文是个插入语，mighty in necromantic horror，有点说不清�
 
 ### The End
 
----------------------
+-----------
 
 这个故事写于1933年，但一直没有发表，直到1994年S.T.Joshi将它收录在了R.H.Barlow的小说集《The Hoard of the Wizard-Beast and One Other》里。本文可能是一篇娱乐之作，留下的只是一些手稿而已——按照Barlow与Lovecraft合作的一贯规律，应该是Barlow写了底稿，然后寄给Lovecraft进行修订和丰满的结果。
 

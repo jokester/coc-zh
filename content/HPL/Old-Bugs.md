@@ -116,7 +116,7 @@ _[注：“Ave, Caesar, moriturus te saluto!”，这是古罗马时期角斗士
 
 ### The End
 
----------------------
+-----------
 
 本文写于1919年6月，后来在1959年阿卡姆出版社出版The Shuttered Room and Other Pieces时将之收录其中。
 
