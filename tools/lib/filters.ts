@@ -2,21 +2,7 @@ import { download_list } from './download_list';
 import { ArrayM } from './util';
 
 /**
- * >>= for Array monad
- */
-function arrayBind<T>(array: T[], transformer: (i: T, lineNo?: number) => T[]): T[] {
-    let result: T[] = [];
-
-    array.forEach((value, index) => {
-        const p = transformer(value, index);
-        result = result.concat(p);
-    });
-
-    return result;
-}
-
-/**
- * #### 
+ * 修正html转换成的md的格式
  */
 export function filter_md(md: string): string {
     // non-empty lines from md
@@ -84,6 +70,16 @@ function fix_title(line: string, lineNo: number): string {
     const matched = /^\*\*(.*?)\*\*$/.exec(line);
     if (matched && matched[1] && title_exists(matched[1]))
         return matched[1];
+
+    return line;
+}
+
+// remove "This post has been edited by **Frend**: 2015-08-09, 12:39"
+function filter_trow_edit(line: string, lineNo: number): string {
+    const matched = /^This post has been edited by [\:]+: ¥\d{4}-\d{2}-\d{2}, \d+:\d{2}(.*)$/i.exec(line);
+    if (matched) {
+        return matched[1];
+    }
 
     return line;
 }

@@ -6,6 +6,7 @@ interface Logger {
 }
 
 const minLogLevel = 1;
+
 export const logger_normal: Logger = {
 
     // e: ERROR (lvl=3)

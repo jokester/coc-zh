@@ -2,3 +2,5 @@
 node_modules
 /_book
 *.js
+/.vscode
+npm-debug.log

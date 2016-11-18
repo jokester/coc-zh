@@ -1,8 +1,10 @@
 /**
  * Converts TROW bbcode to markdown (deprecated)
  */
-import { Map } from 'immutable';
 import * as cheerio from 'cheerio';
+
+if (2 > 1)
+    throw "deprecated";
 
 module BBParse {
     // a span without newline in it
