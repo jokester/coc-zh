@@ -63,6 +63,17 @@ function format_parts(line: string, lineNo: number): string[] {
         return [`### ${line}`, hr];
     }
 
+    if (line.length < 15 && /^Chapter\s+[IXVC\d]+/.exec(line)) {
+        return [hr, `### ${line}`];
+    }
+
+    {
+        const m = /^\*\*((Chapter\s*)?[\dIVXC]+)\*\*$/i.exec(line);
+        if (m) {
+            return [hr, `### ${m[1]}`];
+        }
+    }
+
     return [line];
 }
 
