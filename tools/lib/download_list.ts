@@ -662,7 +662,7 @@ export const download_list_HPL: DownloadList = [
       [隐秘的洞穴，或约翰·李的冒险 / The Secret Cave or John Lees Adventure](Lovecraft/The Secret Cave or John Lees Adventure.md)
       TODO 这3篇也是HPL童年作品，和<<小玻璃瓶>>是同一帖子，应分成3个md
     */
-    
+
     /* [无名都市 / The Nameless City](Lovecraft/The Nameless City.md) */
     {
         title: "The Nameless City",
@@ -679,7 +679,7 @@ export const download_list_HPL: DownloadList = [
             ]
         }]
     },
-    
+
     /* [夜之洋 / The Night Ocean](Lovecraft/The Night Ocean.md)
     * [奈亚拉托提普 / Nyarlathotep](Lovecraft/Nyarlathotep.md) */
 
@@ -727,46 +727,451 @@ export const download_list_HPL: DownloadList = [
         }]
     },
 
-    /* [异乡人 / The Outsider](Lovecraft/The Outsider.md)
-    * [皮克曼的模特 / Pickman's Model](Lovecraft/Pickman's Model.md)
+    /* [异乡人 / The Outsider](Lovecraft/The Outsider.md) */
+    {
+        title: "The Outsider",
+        title_zh: '异乡人',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=17515',
+            selector: [
+                // content
+                '#post-105741',
+                // anecdote
+                '#post-105743',
+            ]
+        }]
+    },
+    /* [皮克曼的模特 / Pickman's Model](Lovecraft/Pickman's Model.md)
     -->
-    * [屋中画 / The Picture in the House](/HPL/The-Picture-in-the-House.md)
-    
-    <!--
-    * [诗与诸神 / Poetry and the Gods](Lovecraft/Poetry and the Gods.md)
+    * [屋中画 / The Picture in the House](/HPL/The-Picture-in-the-House.md) */
+    {
+        title: "The Picture in the House",
+        title_zh: '屋中画',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=24399',
+            selector: [
+                // main
+                '#post-149586',
+                // background
+                '#post-149587',
+            ]
+        }]
+    },
+
+    /* [诗与诸神 / Poetry and the Gods](Lovecraft/Poetry and the Gods.md)
     * [北极星 / Polaris](Lovecraft/Polaris.md)
     * [伊拉农的探求 / The Quest of Iranon](Lovecraft/The Quest of Iranon.md)
-    * [墙中之鼠 / The Rats in the Walls](Lovecraft/The Rats in the Walls.md)
-    * [回忆塞缪尔·约翰逊博士 / A Reminiscence of Dr. Samuel Johnson](Lovecraft/A Reminiscence of Dr. Samuel Johnson.md)
-    * [超越时间之影 / The Shadow Out of Time](Lovecraft/The Shadow Out of Time.md)
-    * [印斯茅斯之影 / The Shadow Over Innsmouth](Lovecraft/The Shadow Over Innsmouth.md)
-    * [畏避之屋 / The Shunned House](Lovecraft/The Shunned House.md)
-    * [银钥匙 / The Silver Key](Lovecraft/The Silver Key.md)
-    * [诛杀怪物 / The Slaying of the Monster](Lovecraft/The Slaying of the Monster.md)
-    * [兰道夫·卡特的供述 / The Statement of Randolph Carter](Lovecraft/The Statement of Randolph Carter.md)
-    * [雾中怪屋 / The Strange High House in the Mist](Lovecraft/The Strange High House in the Mist.md)
+    * [墙中之鼠 / The Rats in the Walls](Lovecraft/The Rats in the Walls.md) */
+    {
+        title: "The Rats in the Walls",
+        title_zh: '墙中之鼠',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=16593',
+            selector: [
+                // conte t
+                '#post-100152',
+                // bg
+                '#post-100153',
+            ]
+        }]
+    },
+
+    /* [回忆塞缪尔·约翰逊博士 / A Reminiscence of Dr. Samuel Johnson](Lovecraft/A Reminiscence of Dr. Samuel Johnson.md)*/
+    {
+        title: "A Reminiscence of Dr. Samuel Johnson",
+        title_zh: '回忆塞缪尔•约翰逊博士',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=27906',
+            selector: [
+                // I
+                '#post-169608',
+                // II
+                '#post-169609',
+            ]
+        }]
+    },
+
+    /* [超越时间之影 / The Shadow Out of Time](Lovecraft/The Shadow Out of Time.md) */
+    {
+        title: "The Shadow Out of Time",
+        title_zh: '超越时间之影',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=15357',
+            selector: [
+                // I
+                '#post-92321',
+                // II
+                '#post-92322',
+                // III
+                '#post-92323',
+                // VI
+                '#post-92324',
+                // V
+                '#post-92325',
+                // VI
+                '#post-92326',
+                // VII
+                '#post-92327',
+                // VII
+                '#post-92328',
+                // bg
+                '#post-92329'
+            ]
+        }]
+    },
+
+    /* [印斯茅斯之影 / The Shadow Over Innsmouth](Lovecraft/The Shadow Over Innsmouth.md) */
+    {
+        title: "The Shadow Over Innsmouth",
+        title_zh: '印斯茅斯的阴霾',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=23012',
+            selector: [
+                // 0
+                '#post-139425',
+                // I
+                '#post-139426',
+                // II
+                '#post-139427',
+                // III
+                '#post-139428',
+                // IV
+                '#post-139429',
+                // V
+                '#post-139430',
+                // bg
+                '#post-139431',
+            ]
+        }]
+    },
+
+    /* [畏避之屋 / The Shunned House](Lovecraft/The Shunned House.md) */
+    {
+        title: "The Shunned House",
+        title_zh: '畏避之屋',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=25029',
+            selector: [
+                // I
+                '#post-153482',
+                // II
+                '#post-153483',
+                // III
+                '#post-153485',
+                // VI
+                '#post-153486',
+                // V
+                '#post-153487',
+                // bg
+                '#post-153488',
+            ]
+        }]
+    },
+
+    /* [银钥匙 / The Silver Key](Lovecraft/The Silver Key.md) */
+    {
+        title: "The Silver Key",
+        title_zh: '银钥匙',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=18114',
+            selector: [
+                // I
+                '#post-109750',
+                // II
+                '#post-109752',
+            ]
+        }]
+    },
+
+    /* [诛杀怪物 / The Slaying of the Monster](Lovecraft/The Slaying of the Monster.md)
+    * [兰道夫·卡特的供述 / The Statement of Randolph Carter](Lovecraft/The Statement of Randolph Carter.md)*/
+    {
+        title: "The Statement of Randolph Carter",
+        title_zh: '伦道夫·卡特的供述',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=23347',
+            selector: [
+                // I
+                '#post-141326',
+                // II
+                '#post-141328',
+            ]
+        }]
+    },
+
+    /* [雾中怪屋 / The Strange High House in the Mist](Lovecraft/The Strange High House in the Mist.md)
     * [道路 / The Street](Lovecraft/The Street.md)
     * [甜美的艾门嘉德 / Sweet Ermengarde](Lovecraft/Sweet Ermengarde.md)
     * [神殿 / The Temple](Lovecraft/The Temple.md)
     * [可怕的老人 / The Terrible Old Man](Lovecraft/The Terrible Old Man.md)
     * [月下之物 / The Thing in the Moonlight](Lovecraft/The Thing in the Moonlight.md)
-    * [门口的东西 / The Thing on the Doorstep](Lovecraft/The Thing on the Doorstep.md)
-    * [穿越银匙之门 / Through the Gates of the Silver Key](Lovecraft/Through the Gates of the Silver Key.md)
-    * [直至诸海…… / Till A' the Seas](Lovecraft/Till A' the Seas.md)
-    * [坟墓 / The Tomb](Lovecraft/The Tomb.md)
-    * [胡安·罗梅洛的变貌 / The Transition of Juan Romero](Lovecraft/The Transition of Juan Romero.md)
-    * [圈套 / The Trap](Lovecraft/The Trap.md)
-    * [树 / The Tree](Lovecraft/The Tree.md)
-    * [山上的树 / The Tree on the Hill](Lovecraft/The Tree on the Hill.md)
-    * [两只黑瓶 / Two Black Bottles](Lovecraft/Two Black Bottles.md)
-    * [金字塔下 / Under the Pyramids](Lovecraft/Under the Pyramids.md)
-    * [不可名状 / The Unnamable](Lovecraft/The Unnamable.md)
-    * [远古的民族 / The Very Old Folk](Lovecraft/The Very Old Folk.md)
-    * [月光下 / What the Moon Brings](Lovecraft/What the Moon Brings.md)
-    * [暗夜呢喃 / The Whisperer in Darkness](Lovecraft/The Whisperer in Darkness.md)
-    * [白船 / The White Ship](Lovecraft/The White Ship.md)
-    * [有翼死神 / Winged Death](Lovecraft/Winged Death.md)
-    * [怪奇小说创作笔记 / Notes on Writing Weird Fiction](Lovecraft/Notes on Writing Weird Fiction.md)
+    * [门口的东西 / The Thing on the Doorstep](Lovecraft/The Thing on the Doorstep.md) */
+    {
+        title: "The Thing on the Doorstep",
+        title_zh: '门外之物',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=25297',
+            selector: [
+                // I
+                '#post-155170',
+                // II
+                '#post-155171',
+                // III
+                '#post-155172',
+                // IV
+                '#post-155173',
+                // V
+                '#post-155174',
+                // VI
+                '#post-155175',
+                // VII
+                '#post-155176',
+                // bg
+                '#post-155177',
+            ]
+        }]
+    },
+
+    /* [穿越银匙之门 / Through the Gates of the Silver Key](Lovecraft/Through the Gates of the Silver Key.md)*/
+    {
+        title: "Through The Gates of Silver Key",
+        title_zh: '穿越银匙之门',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=19738',
+            selector: [
+                // I
+                '#post-121407',
+                // II
+                '#post-121408',
+                // III
+                '#post-121409',
+                // IV
+                '#post-121410',
+                // V
+                '#post-121411',
+                // VI
+                '#post-121412',
+                // VII
+                '#post-121413',
+                // VIII
+                '#post-121414',
+                // bg
+                '#post-121416',
+            ]
+        }]
+    },
+
+    /* [直至诸海…… / Till A' the Seas](Lovecraft/Till A' the Seas.md) */
+    {
+        title: "Till A’ the Seas",
+        title_zh: '直至诸海',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=24215',
+            selector: [
+                // I
+                '#post-148046',
+                // II
+                '#post-148047',
+            ]
+        }]
+    },
+
+    /* [坟墓 / The Tomb](Lovecraft/The Tomb.md) */
+    {
+        title: "The Tomb",
+        title_zh: '坟墓',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=25216',
+            selector: [
+                // content
+                '#post-154554',
+                // bg
+                '#post-154555',
+            ]
+        }]
+    },
+
+    /* [胡安·罗梅洛的变貌 / The Transition of Juan Romero](Lovecraft/The Transition of Juan Romero.md)
+    * [圈套 / The Trap](Lovecraft/The Trap.md) */
+    {
+        title: "Trap",
+        title_zh: '圈套',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=25549',
+            selector: [
+                // content
+                '#post-156504',
+                // bg
+                '#post-156505',
+            ]
+        }]
+    },
+
+    /* [树 / The Tree](Lovecraft/The Tree.md)
+    * [山上的树 / The Tree on the Hill](Lovecraft/The Tree on the Hill.md)*/
+    {
+        title: "The Tree on the Hill",
+        title_zh: '山上的树',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=23116',
+            selector: [
+                // I ~ III
+                '#post-139992',
+                // bg
+                '#post-139993',
+            ]
+        }]
+    },
+
+    /* [两只黑瓶 / Two Black Bottles](Lovecraft/Two Black Bottles.md) */
+    {
+        title: "Two Black Bottles",
+        title_zh: '两只黑瓶',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=28039',
+            selector: [
+                // content + bg
+                '#post-170439',
+            ]
+        }]
+    },
+
+    /* [金字塔下 / Under the Pyramids](Lovecraft/Under the Pyramids.md) */
+    {
+        title: "The Tomb",
+        title_zh: '坟墓',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=22535',
+            selector: [
+                // 0
+                '#post-136649',
+                // 1
+                '#post-136650',
+                // bg
+                '#post-136651',
+            ]
+        }]
+    },
+
+    /* [不可名状 / The Unnamable](Lovecraft/The Unnamable.md) */
+    {
+        title: "The Unnamable",
+        title_zh: '不可名状',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=23320',
+            selector: [
+                // content
+                '#post-141160',
+                // bg
+                '#post-141161',
+            ]
+        }]
+    },
+
+    /* [远古的民族 / The Very Old Folk](Lovecraft/The Very Old Folk.md)
+    * [月光下 / What the Moon Brings](Lovecraft/What the Moon Brings.md) */
+    {
+        title: "What the Moon Brings",
+        title_zh: '月光下',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=23115',
+            selector: [
+                // content
+                '#post-139984',
+                // bg
+                '#post-139985',
+            ]
+        }]
+    },
+
+    /* [暗夜呢喃 / The Whisperer in Darkness](Lovecraft/The Whisperer in Darkness.md) */
+    {
+        title: "The Whisperer in Darkness",
+        title_zh: '暗夜呢喃',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=17411',
+            selector: [
+                // chapter 1
+                '#post-105154',
+                // chapter 2
+                '#post-105155',
+                // chapter 3
+                '#post-105156',
+                // chapter 4
+                '#post-105157',
+                // chapter 5
+                '#post-105158',
+                // chapter 6
+                '#post-105159',
+                // chapter 7
+                '#post-105160',
+                // chapter 8
+                '#post-105161',
+                // bg
+                '#post-105164',
+            ]
+        }]
+    },
+
+    /* [白船 / The White Ship](Lovecraft/The White Ship.md)
+    * [有翼死神 / Winged Death](Lovecraft/Winged Death.md)*/
+    {
+        title: "Winged Death",
+        title_zh: '有翼死神',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=27216',
+            selector: [
+                // content
+                '#post-166211',
+                // bg
+                '#post-166212',
+            ]
+        }]
+    },
+
+    /* [怪奇小说创作笔记 / Notes on Writing Weird Fiction](Lovecraft/Notes on Writing Weird Fiction.md)
     * [文学中的超自然恐怖 / Supernatural Horror in Literature](Lovecraft/Supernatural Horror in Literature.md)
     -->
     

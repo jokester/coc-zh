@@ -75,3 +75,45 @@
 * [Old Bugs / 老臭虫](HPL/Old-Bugs.md)
 
 * [Out of the Aeons / 超越万古](HPL/Out-of-the-Aeons.md)
+
+* [The Outsider / 异乡人](HPL/The-Outsider.md)
+
+* [The Picture in the House / 屋中画](HPL/The-Picture-in-the-House.md)
+
+* [The Rats in the Walls / 墙中之鼠](HPL/The-Rats-in-the-Walls.md)
+
+* [A Reminiscence of Dr. Samuel Johnson / 回忆塞缪尔•约翰逊博士](HPL/A-Reminiscence-of-Dr-Samuel-Johnson.md)
+
+* [The Shadow Out of Time / 超越时间之影](HPL/The-Shadow-Out-of-Time.md)
+
+* [The Shadow Over Innsmouth / 印斯茅斯的阴霾](HPL/The-Shadow-Over-Innsmouth.md)
+
+* [The Shunned House / 畏避之屋](HPL/The-Shunned-House.md)
+
+* [The Silver Key / 银钥匙](HPL/The-Silver-Key.md)
+
+* [The Statement of Randolph Carter / 伦道夫·卡特的供述](HPL/The-Statement-of-Randolph-Carter.md)
+
+* [The Thing on the Doorstep / 门外之物](HPL/The-Thing-on-the-Doorstep.md)
+
+* [Through The Gates of Silver Key / 穿越银匙之门](HPL/Through-The-Gates-of-Silver-Key.md)
+
+* [Till A’ the Seas / 直至诸海](HPL/Till-A-the-Seas.md)
+
+* [The Tomb / 坟墓](HPL/The-Tomb.md)
+
+* [Trap / 圈套](HPL/Trap.md)
+
+* [The Tree on the Hill / 山上的树](HPL/The-Tree-on-the-Hill.md)
+
+* [Two Black Bottles / 两只黑瓶](HPL/Two-Black-Bottles.md)
+
+* [The Tomb / 坟墓](HPL/The-Tomb.md)
+
+* [The Unnamable / 不可名状](HPL/The-Unnamable.md)
+
+* [What the Moon Brings / 月光下](HPL/What-the-Moon-Brings.md)
+
+* [The Whisperer in Darkness / 暗夜呢喃](HPL/The-Whisperer-in-Darkness.md)
+
+* [Winged Death / 有翼死神](HPL/Winged-Death.md)

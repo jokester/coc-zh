@@ -112,6 +112,5 @@ function removeConsecutiveHR(lines: string[]): string[] {
         }
     });
 
-
     return result;
 }
