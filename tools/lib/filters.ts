@@ -11,6 +11,7 @@ export function filter_md(md: string): string {
     const newLines = new ArrayM(lines)
         .map(replace_translators)
         .map(fix_title)
+        .map(change_hr)
         .bind(format_parts)
         .bind(format_metadata)
         .toArray();
@@ -81,5 +82,14 @@ function filter_trow_edit(line: string, lineNo: number): string {
         return matched[1];
     }
 
+    return line;
+}
+
+// replace ———————— to ------
+
+function change_hr(line: string) {
+    if (/^—{3,}$/.exec(line)) {
+        return '-----------';
+    }
     return line;
 }
