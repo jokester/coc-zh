@@ -1,6 +1,6 @@
 import fs = require('fs');
 
-import { DownloadItem, genFullname } from './download';
+import { DownloadItem } from './download';
 
 import { logger_normal as logger } from './util';
 
@@ -28,8 +28,29 @@ export function readFile(filename: string): Promise<string> {
     });
 }
 
+
+/**
+ * Item的保存文件名
+ */
+export function genFilename(item: DownloadItem) {
+    return item.id || item.title.split(/[^0-9a-zA-Z]+/).join('-');
+}
+
+/**
+ * Item的保存路径 (包括prefix)
+ */
+export function genFullname(item: DownloadItem) {
+    return `${item.prefix || 'HPL'}/${genFilename(item)}`;
+}
+
+/**
+ */
+export function rawPathFor(item: DownloadItem) {
+    return `${__dirname}/../raw/${genFullname(item)}.html`;
+}
+
 export function saveRaw(item: DownloadItem, content: string) {
-    const path = `${__dirname}/../raw/${genFullname(item)}.html`;
+    const path = rawPathFor(item);
     return writeFile(path, content);
 }
 

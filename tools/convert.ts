@@ -3,9 +3,13 @@
  */
 import { http } from './lib/net';
 import { logger_normal as logger } from './lib/util';
-import { saveSummary, saveConverted } from './lib/local-io';
-import { genFullname } from './lib/download';
+import { DownloadItem } from './lib/download';
+import { saveSummary, saveConverted, genFullname, rawPathFor, readFile } from './lib/local-io';
 import { download_list, download_list_HPL } from './lib/download_list';
+import { tidyHTML, selectPart, decodeHtmlEntity, fixMultiSpanTag, removeExtraTag } from './lib/html';
+
+import { to_markdown } from './lib/markdown';
+import { filter_md } from './lib/filters';
 
 /**
  * 将html转换为md
@@ -59,7 +63,7 @@ function summary() {
     const summary = summary_lines_prefix.concat(summary_lines_hpl).join("\n\n");
 
     saveSummary(summary)
-        .then(() => logger.i(`SUMMARY.md generated`) )
+        .then(() => logger.i(`SUMMARY.md generated`))
         .catch((e) => {
             logger.e(`error generating SUMMARY.md`)
             logger.e(e);

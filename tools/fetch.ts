@@ -1,13 +1,13 @@
 /**
  * fetch content (html) from trow posts
  */
-const cookie: Object = null
-
+import fs = require('fs');
 import { http } from './lib/net'
 import { logger_normal as logger } from './lib/util';
-import { getPostContent, bb2Markdown } from './lib/trow_bbcode';
 import { download_list } from './lib/download_list';
-import { downloadItem } from './lib/download';
+import { DownloadItem } from './lib/download';
+import { rawPathFor, saveRaw } from './lib/local-io';
+import { tidyHTML, selectPart, decodeHtmlEntity, fixMultiSpanTag, removeExtraTag } from './lib/html';
 
 /**
  * 下载文件 (已有时不会再次下载)
@@ -38,7 +38,7 @@ function main() {
         const itemDesc = `item#${itemNo}: ${item.title} / ${item.title_zh}`;
 
         downloadItem(item)
-            .then( () => logger.i(`saved ${itemDesc}`) )
+            .then(() => logger.i(`saved ${itemDesc}`))
             .catch(logger.w);
     })
 }

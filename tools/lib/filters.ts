@@ -74,7 +74,12 @@ function fix_title(line: string, lineNo: number): string {
     return line;
 }
 
-//
+// remove "This post has been edited by **Frend**: 2015-08-09, 12:39"
 function filter_trow_edit(line: string, lineNo: number): string {
-    This post has been edited by **Frend**: 2015-08-09, 12:39
+    const matched = /^This post has been edited by [\:]+: ¥\d{4}-\d{2}-\d{2}, \d+:\d{2}(.*)$/i.exec(line);
+    if (matched) {
+        return matched[1];
+    }
+
+    return line;
 }

@@ -1,10 +1,3 @@
-import fs = require('fs');
-import { saveConverted, readFile, saveRaw } from './local-io';
-
-import { http } from './net';
-import { tidyHTML, selectPart, decodeHtmlEntity, fixMultiSpanTag, removeExtraTag } from './html';
-import { to_markdown } from './markdown';
-import { filter_md } from './filters';
 
 export interface DownloadSource {
     // 页面url
@@ -40,24 +33,3 @@ export interface DownloadItem {
 }
 
 export type DownloadList = DownloadItem[];
-
-/**
- * Item的保存文件名
- */
-export function genFilename(item: DownloadItem) {
-    return item.id || item.title.split(/[^0-9a-zA-Z]+/).join('-');
-}
-
-/**
- * Item的保存路径 (包括prefix)
- */
-export function genFullname(item: DownloadItem) {
-    return `${item.prefix || 'HPL'}/${genFilename(item)}`;
-}
-
-/**
- */
-function rawPathFor(item: DownloadItem) {
-    return `${__dirname}/../raw/${genFullname(item)}.html`;
-}
-
