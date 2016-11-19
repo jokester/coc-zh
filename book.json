@@ -1,5 +1,8 @@
 {
     "title": "克苏鲁神话",
     "language": "zh",
-    "root": "./content"
+    "root": "./content",
+    "plugins": ["-search"],
+    "pluginsConfig": {
+    }
 }
