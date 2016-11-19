@@ -122,13 +122,13 @@ _[注5：Duke of Leeds，这是一个英国贵族的头衔。]_
 
 我问博士，他有没有试过将这东西弄得像样一些；但他说他没试过，于是我自娱自乐地修订了它：
 
-豪杰利兹迎新娘，　When Gallant LEEDS auspiciously shall wed　　
+豪杰利兹迎新娘，　When Gallant LEEDS auspiciously shall wed
 
-贞洁美人家世长。　The virtuous Fair, of antient Lineage bred,　　　
+贞洁美人家世长。　The virtuous Fair, of antient Lineage bred,
 
 少女骄傲心意欢，　How must the Maid rejoice with conscious Pride
 
-可有郎君侧相伴。　To win so great an Husband to her Side!　　　　
+可有郎君侧相伴。　To win so great an Husband to her Side!
 
 我向约翰逊博士展示了这首诗，他说：“先生，你解决了韵脚，但这几行字里既没有诗意也没有智慧。”
 

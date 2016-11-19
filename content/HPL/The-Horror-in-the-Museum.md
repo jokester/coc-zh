@@ -1,4 +1,4 @@
- **蜡像馆惊魂** 
+## 蜡像馆惊魂
 
 ## The Horror in the Museum
 

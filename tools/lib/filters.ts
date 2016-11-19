@@ -10,6 +10,8 @@ export function filter_md(md: string): string {
     const lines = md.split(/[\r\n]+/);
 
     const newLines = new ArrayM(lines)
+        .map(trimRight)
+        .map(trimLeft)
         .map(replace_translators)
         .map(fix_title)
         .map(change_hr)
@@ -59,8 +61,11 @@ function format_parts(line: string, lineNo: number): string[] {
         return [hr, `### ${line}`];
     }
 
-    if (/^the end/i.exec(line)) {
-        return [`### ${line}`, hr];
+    {
+        const m = /^(\*\*)?\s*(the\s+end)\s*(\*\*)?/i.exec(line);
+        if (m) {
+            return [`### ${m[2]}`, hr];
+        }
     }
 
     if (line.length < 15 && /^Chapter\s+[IXVC\d]+/.exec(line)) {
@@ -68,7 +73,7 @@ function format_parts(line: string, lineNo: number): string[] {
     }
 
     {
-        const m = /^\*\*((Chapter\s*)?[\dIVXC]+)\*\*$/i.exec(line);
+        const m = /^\*\*((Chapter\s*)?([\dIVXC])+\.?)\*\*$/i.exec(line);
         if (m) {
             return [hr, `### ${m[1]}`];
         }
@@ -124,4 +129,15 @@ function removeConsecutiveHR(lines: string[]): string[] {
     });
 
     return result;
+}
+
+function trimLeft(line: string): string {
+    if (/^\s{1}/.exec(line) && ! /^\s{2,}/.exec(line) )
+        return line.replace(/^\s+/, '');
+
+    return line;
+}
+
+function trimRight(line: string): string {
+    return line.replace(/\s*$/, '');
 }

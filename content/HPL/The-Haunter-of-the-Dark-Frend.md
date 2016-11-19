@@ -244,7 +244,9 @@ _[注： the Tau Omega fraternity ，两个词都来自希腊字母]_
 
 “我看见它——过来了——阴风——巨大模糊——黑色的翅膀——犹格·索托斯救我——那裂成三瓣、燃烧着的眼睛……”
 
- **The End** 
+### The End
+
+-----------
 
 本文写于1935年11月，被认为是回应Robert·Bloch所著的《The Shambler from the Stars》而创作的作品——因为Bloch在小说里写到了一个非常像是Lovecraft的恐怖小说作家，而且还把他给弄死了，所以Lovecraft也跟着在这篇故事里弄死了叫做Robert的主角……。
 
