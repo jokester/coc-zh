@@ -18,6 +18,7 @@ export function filter_md(md: string): string {
         .bind(format_parts)
         .bind(format_metadata)
         .tap(removeConsecutiveHR)
+        .bind(dropLastHR)
         .toArray();
 
     return newLines.join("\n\n") + "\n";
@@ -140,4 +141,11 @@ function trimLeft(line: string): string {
 
 function trimRight(line: string): string {
     return line.replace(/\s*$/, '');
+}
+
+function dropLastHR(line: string, lineNum: number, wholeArray: string[]): string[] {
+    if (line === hr && lineNum === (wholeArray.length-1))
+        return [];
+
+    return [line];
 }

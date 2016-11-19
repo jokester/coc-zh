@@ -93,11 +93,11 @@ export class ArrayM<T> {
     /**
      * >>=
      */
-    bind<T2>(action: (v: T, index?: number) => T2[]): ArrayM<T2> {
+    bind<T2>(action: (v: T, index?: number, wholeArray?: T[]) => T2[]): ArrayM<T2> {
         let result = [] as T2[];
 
         this.array.forEach((v, i) => {
-            const r = action(v, i);
+            const r = action(v, i, this.array);
             result = result.concat(r);
         })
 
