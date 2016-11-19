@@ -30,6 +30,7 @@
   "homepage": "https://github.com/jokester/coc-zh#readme",
   "dependencies": {
     "gitbook-cli": "^2.3.0",
+    "han-css": "^3.3.0",
     "ts-node": "^1.6.0",
     "typescript": "^2.0.3"
   },

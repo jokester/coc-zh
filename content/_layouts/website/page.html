@@ -1,0 +1,11 @@
+{% extends template.self %}
+
+{% block style %}
+    <link rel="stylesheet" type="text/css" href="{{ './external/han.min.css'|resolveFile }}" />
+    {{ super() }}
+{% endblock %}
+
+{% block javascript %}
+    {{ super() }}
+    <script type="text/javascript" src="{{ './external/han.min.js'|resolveFile }}"></script>
+{% endblock %}
