@@ -74,7 +74,7 @@ function format_parts(line: string, lineNo: number): string[] {
     }
 
     {
-        const m = /^\*\*((Chapter\s*)?([\dIVXC])+\.?)\*\*$/i.exec(line);
+        const m = /^\*\*((Chapter\s*)?([\dIVXC])+\s*[.]?(:.*?)?)\*\*$/i.exec(line);
         if (m) {
             return [hr, `### ${m[1]}`];
         }
