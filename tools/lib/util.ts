@@ -46,11 +46,16 @@ export const logger_silent: Logger = {
 }
 
 /**
- * Warning: unhandled exception thrown by `fun` may stop node process
+ * @param fun: The function to be wrapper
+ * @param interval: The interval to call *fun* once
+ * @param releaseAfter: Delay between last call and release of timer
+ *
+ * @returns wrapped version of fun
+ *
+ * Warning: `fun` will be executed with `setTimeout`. Its unhandled exception may stop node process
  */
 export function limit<T extends Function>(fun: T, interval: number, releaseAfter: number): T {
 
-    let releaseTimer: number = null;
     let lastCallAt = -1;
     let lastCheck = 0;
 
@@ -87,11 +92,14 @@ export function limit<T extends Function>(fun: T, interval: number, releaseAfter
     return decorated as any as T;
 }
 
+/**
+ * A wrapper for Array.
+ */
 export class ArrayM<T> {
     constructor(private array: T[]) { }
 
     /**
-     * >>=
+     * >>= : taken from List Monad
      */
     bind<T2>(action: (v: T, index?: number, wholeArray?: T[]) => T2[]): ArrayM<T2> {
         let result = [] as T2[];
@@ -105,16 +113,22 @@ export class ArrayM<T> {
     }
 
     /**
-     * map
+     * map: a instance of Functor fmap
      */
-    map<T2>(iteratee: (v: T, index?: number) => T2): ArrayM<T2> {
+    map<T2>(iteratee: (v: T, index?: number, wholeArray?: T[]) => T2): ArrayM<T2> {
         return new ArrayM(this.array.map(iteratee));
     }
 
+    /**
+     * taken from Array#tap in ruby
+     */
     tap<T2>(iteratee: (v: T[]) => T2[]): ArrayM<T2> {
         return new ArrayM(iteratee(this.array));
     }
 
+    /**
+     * unwraps ArrayM<T> and returns an array T[]
+     */
     toArray() {
         return this.array.slice();
     }

@@ -2,7 +2,7 @@
     "title": "克苏鲁神话",
     "language": "zh",
     "root": "./content",
-    "plugins": ["-search"],
+    "plugins": ["-search", "-lunr"],
     "pluginsConfig": {
     }
 }

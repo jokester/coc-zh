@@ -15,6 +15,7 @@ export function filter_md(md: string): string {
         .map(replace_translators)
         .map(fix_title)
         .map(change_hr)
+        .map(beautify_parensis)
         .bind(format_parts)
         .bind(format_metadata)
         .tap(removeConsecutiveHR)
@@ -132,20 +133,42 @@ function removeConsecutiveHR(lines: string[]): string[] {
     return result;
 }
 
+/**
+ * 去掉行首的空白
+ */
 function trimLeft(line: string): string {
-    if (/^\s{1}/.exec(line) && ! /^\s{2,}/.exec(line) )
-        return line.replace(/^\s+/, '');
+    if (/^[\s　]{1,2}/.exec(line) && ! /^\s{3,}/.exec(line))
+        return line.replace(/^[\s　]+/, '');
 
     return line;
 }
 
+/**
+ * 去掉行末的空白
+ */
 function trimRight(line: string): string {
     return line.replace(/\s*$/, '');
 }
 
+/**
+ * 去掉文末的<hr/>
+ */
 function dropLastHR(line: string, lineNum: number, wholeArray: string[]): string[] {
-    if (line === hr && lineNum === (wholeArray.length-1))
+    if (line === hr && lineNum === (wholeArray.length - 1))
         return [];
 
     return [line];
+}
+
+/**
+ * 将   汉字(ooo)汉字   替换为 汉字 (ooo) 汉字
+ * 并统一为半角括号
+ */
+function beautify_parensis(line: string): string {
+    return line.replace(/(.)[(（](.*?)[)）](.)/, function(matched, left, inside, right) {
+        if (left !== ']')
+            return `${left} (${inside}) ${right}`;
+
+        return matched;
+    })
 }

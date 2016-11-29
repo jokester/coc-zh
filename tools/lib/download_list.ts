@@ -4,9 +4,9 @@ export const download_list_HPL: DownloadList = [
     /**
      * 
 <!--
-* [炼金术士 / The Alchemist](Lovecraft/The Alchemist.md)
-* [灰烬 / Ashes](Lovecraft/Ashes.md)
-* [疯狂山脉 / At the Mountains of Madness](Lovecraft/At the Mountains of Madness.md)
+* 炼金术士 / The Alchemist
+* 灰烬 / Ashes
+* 疯狂山脉 / At the Mountains of Madness
 */
     {
         title: "At the Mountains of Madness",
@@ -49,12 +49,33 @@ export const download_list_HPL: DownloadList = [
     },
 
     /*
-    * [阿撒托斯 / Azathoth](Lovecraft/Azathoth.md)
-    * [新世纪前夜的决战 / The Battle that Ended the Century](Lovecraft/The Battle that Ended the Century.md)
-    * [洞中兽 / The Beast in the Cave](Lovecraft/The Beast in the Cave.md)
-    * [翻越睡梦之墙 / Beyond the Wall of Sleep](Lovecraft/Beyond the Wall of Sleep.md)
+    * 阿撒托斯 / Azathoth
     */
+    {
+        title: "Azathoth",
+        title_zh: "阿撒托斯",
 
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=22791',
+            selector: ['#post-138259']
+        }]
+    },
+
+    /* 新世纪前夜的决战 / The Battle that Ended the Century */
+    {
+        title: "The Battle that Ended the Century",
+        title_zh: "新世纪前夜的决战",
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=20938',
+            selector: ['#post-127934']
+        }]
+    },
+    /* 洞中兽 / The Beast in the Cave
+    * 翻越睡梦之墙 / Beyond the Wall of Sleep
+    */
     {
         title: "Beyond The Wall of Sleep",
         title_zh: "翻越睡梦之墙",
@@ -65,11 +86,18 @@ export const download_list_HPL: DownloadList = [
             selector: ['#post-133081']
         }]
     },
+    /* 书 / The Book */
+    {
+        title: "The Book",
+        title_zh: "书",
 
-    /*
-    * [书 / The Book](Lovecraft/The Book.md)
-    * [克苏鲁的呼唤 / The Call of Cthulhu](Lovecraft/The Call of Cthulhu.md)
-    */
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=22117',
+            selector: ['#post-134331']
+        }]
+    },
+    /* 克苏鲁的呼唤 / The Call of Cthulhu */
     {
         // 竹子译版
         title: "The Call of Cthulhu",
@@ -84,7 +112,7 @@ export const download_list_HPL: DownloadList = [
     },
 
     /*
-    * [查尔斯·迪克斯特·瓦德事件 / The Case of Charles Dexter Ward](Lovecraft/The Case of Charles Dexter Ward.md)
+    * 查尔斯·迪克斯特·瓦德事件 / The Case of Charles Dexter Ward
     */
     {
         // 竹子译版
@@ -115,9 +143,19 @@ export const download_list_HPL: DownloadList = [
         }],
     },
     /*
-    * [乌撒的猫 / The Cats of Ulthar](Lovecraft/The Cats of Ulthar.md)
-    * [塞勒菲斯 / Celephaïs](Lovecraft/Celephaïs.md)
-    */
+    * 乌撒的猫 / The Cats of Ulthar
+    * 塞勒菲斯 / Celephaïs */
+    {
+        title: 'Celephaïs',
+        title_zh: '塞勒菲斯',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=21321',
+            selector: ['#post-129957']
+        }]
+    },
+    /* 来自彼方的挑战 / The Challenge from Beyond */
     {
         title: 'The Challenge from Beyond',
         title_zh: '彼方的挑战',
@@ -129,12 +167,23 @@ export const download_list_HPL: DownloadList = [
         }]
     },
 
-    /*
-    * [来自彼方的挑战 / The Challenge from Beyond](Lovecraft/The Challenge from Beyond.md)
-    * [崩坏的宇宙 / Collapsing Cosmoses](Lovecraft/Collapsing Cosmoses.md)
-    * [星之彩 / The Colour Out of Space](Lovecraft/The Colour Out of Space.md)
-    * [寒气 / Cool Air](Lovecraft/Cool Air.md)
-    */
+    /* 崩坏的宇宙 / Collapsing Cosmoses
+       与 诛杀怪物 / The Slaying of the Monster
+       TODO 分成两个markdown */
+    {
+        title: 'The Slaying of the Monster',
+        title_zh: '诛杀怪物',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/showtopic=20858&st=0&p=127543&#entry127543',
+            selector: ['#post-127543']
+        }]
+    },
+    /* 星之彩 / The Colour Out of Space */
+    // TODO ask修白川@trow
+
+    /* 寒气 / Cool Air */
     {
         title: 'Cool Air',
         title_zh: '寒气',
@@ -146,7 +195,7 @@ export const download_list_HPL: DownloadList = [
         }]
     },
 
-    /* [伏行的混沌 / The Crawling Chaos](Lovecraft/The Crawling Chaos.md) */
+    /* 伏行的混沌 / The Crawling Chaos */
     {
         title: 'The Crawling Chaos',
         title_zh: '蠕行的混沌',
@@ -158,7 +207,7 @@ export const download_list_HPL: DownloadList = [
         }]
     },
 
-    /* [伊格的诅咒 / The Curse of Yig](Lovecraft/The Curse of Yig.md) */
+    /* 伊格的诅咒 / The Curse of Yig */
     {
         title: 'The Curse of Yig',
         title_zh: '伊格的诅咒',
@@ -177,13 +226,26 @@ export const download_list_HPL: DownloadList = [
         }]
     },
 
-    /* [达贡 / Dagon](Lovecraft/Dagon.md)
-    * [聋，哑，瞎 / Deaf, Dumb, and Blind](Lovecraft/Deaf, Dumb, and Blind.md)
-    * [后裔 / The Descendant](Lovecraft/The Descendant.md)
-    * [阿隆佐·泰普尔的日记 / The Diary of Alonzo Typer](Lovecraft/The Diary of Alonzo Typer.md) */
+    /* 达贡 / Dagon
+    * 聋，哑，瞎 / Deaf, Dumb, and Blind
+    * 后裔 / The Descendant */
 
-    /* [掘墓 / The Disinterment](Lovecraft/The Disinterment.md) */
+    /* 阿隆佐·泰普尔的日记 / The Diary of Alonzo Typer */
+    {
+        title: 'The Diary of Alonzo Typer',
+        title_zh: '阿隆佐·泰普尔的日记',
 
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=25526',
+            selector: [
+                // 全文
+                '#post-156426',
+            ]
+        }]
+    },
+
+    /* 掘墓 / The Disinterment */
     {
         title: 'The Disinterment',
         title_zh: '掘墓',
@@ -200,9 +262,22 @@ export const download_list_HPL: DownloadList = [
         }]
     },
 
-    /* [降临在萨尔纳斯的灾殃 / The Doom That Came to Sarnath](Lovecraft/The Doom That Came to Sarnath.md)
-    * [秘境卡达斯梦寻记 / The Dream-Quest of Unknown Kadath](Lovecraft/The Dream-Quest of Unknown Kadath.md) */
+    /* 降临在萨尔纳斯的灾殃 / The Doom That Came to Sarnath */
+    {
+        title: 'The Doom That Came to Sarnath',
+        title_zh: '降临在萨尔纳斯的灾殃',
 
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=21299',
+            selector: [
+                // 全文
+                '#post-129794',
+            ]
+        }]
+    },
+
+    /* 秘境卡达斯梦寻记 / The Dream-Quest of Unknown Kadath */
     {
         title: 'The Dream-Quest of Unknown Kadath',
         title_zh: '梦寻秘境卡达斯',
@@ -231,7 +306,7 @@ export const download_list_HPL: DownloadList = [
         }]
     },
 
-    /* [魔女屋中之梦 / The Dreams in the Witch House](Lovecraft/The Dreams in the Witch House.md) */
+    /* 魔女屋中之梦 / The Dreams in the Witch House */
     {
         title: 'The Dreams in Witch-House',
         title_zh: '魔女屋中之梦',
@@ -254,7 +329,7 @@ export const download_list_HPL: DownloadList = [
         }]
     },
 
-    /* [敦威治恐怖事件 / The Dunwich Horror](Lovecraft/The Dunwich Horror.md) */
+    /* 敦威治恐怖事件 / The Dunwich Horror */
     {
         title: 'The Dunwich Horror',
         title_zh: '敦威治恐怖事件',
@@ -287,7 +362,7 @@ export const download_list_HPL: DownloadList = [
         }]
     },
 
-    /* [电刑器 / The Electric Executioner](Lovecraft/The Electric Executioner.md) */
+    /* 电刑器 / The Electric Executioner */
     {
         title: 'The Electric Executioner',
         title_zh: '电刑器',
@@ -304,7 +379,7 @@ export const download_list_HPL: DownloadList = [
         }]
     },
 
-    /* [邪恶的教士 / The Evil Clergyman](Lovecraft/The Evil Clergyman.md) */
+    /* 邪恶的教士 / The Evil Clergyman */
     {
         title: 'The Evil Clergyman',
         title_zh: '邪恶的教士',
@@ -321,10 +396,52 @@ export const download_list_HPL: DownloadList = [
         }]
     },
 
-    /* [来自遗忘 / Ex Oblivione](Lovecraft/Ex Oblivione.md)
-    * [关于已故亚瑟·杰尔敏及其家系的事实 / Facts Concerning the Late Arthur Jermyn and His Family](Lovecraft/Facts Concerning the Late Arthur Jermyn and His Family.md)
-    * [魔宴 / The Festival](Lovecraft/The Festival.md) */
-    /* [自外而来 / From Beyond](Lovecraft/From Beyond.md) */
+    /* 来自遗忘 / Ex Oblivione */
+    {
+        title: 'Ex Oblivione',
+        title_zh: '来自遗忘',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=21933',
+            selector: [
+                // 正文
+                '#post-133372',
+            ]
+        }]
+    },
+
+    /* 关于已故亚瑟·杰尔敏及其家系的事实 / Facts Concerning the Late Arthur Jermyn and His Family */
+    {
+        title: 'Facts Concerning the Late Arthur Jermyn and His Family',
+        title_zh: '关于已故亚瑟·杰尔敏及其家系的事实',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=22035',
+            selector: [
+                // 正文
+                '#post-133856',
+            ]
+        }]
+    },
+
+    /* 魔宴 / The Festival */
+    {
+        title: 'The Festival',
+        title_zh: '魔宴',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=22523',
+            selector: [
+                // 正文
+                '#post-136513',
+            ]
+        }]
+    },
+
+    /* 自外而来 / From Beyond */
     {
         title: 'From Beyond',
         title_zh: '自外而来',
@@ -341,11 +458,29 @@ export const download_list_HPL: DownloadList = [
         }]
     },
 
-    /* [噬鬼者 / The Ghost-Eater](Lovecraft/The Ghost-Eater.md)
-    * [绿色草原 / The Green Meadow](Lovecraft/The Green Meadow.md) */
-    /* [夜魔 / The Haunter of the Dark](Lovecraft/The Haunter of the Dark.md) */
+    /* 噬鬼者 / The Ghost-Eater TODO */
+
+    /* 绿色草原 / The Green Meadow */
+    {
+        title: 'The Green Meadow',
+        title_zh: '绿色草原',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=22014',
+            selector: [
+                // 正文
+                '#post-133757',
+                // 背景
+                '#post-133759',
+            ]
+        }]
+    },
+
+    /* 夜魔 / The Haunter of the Dark */
     {
         // 竹子译版
+        // FIXME 换个id, 不包含译者名
         title: 'The Haunter of the Dark',
         title_zh: '夜魔',
         id: 'The-Haunter-of-the-Dark-Frend',
@@ -364,7 +499,7 @@ export const download_list_HPL: DownloadList = [
         }]
     },
 
-    /* [他 / He](Lovecraft/He.md) */
+    /* 他 / He */
     {
         title: 'He',
         title_zh: '他',
@@ -381,7 +516,7 @@ export const download_list_HPL: DownloadList = [
         }]
     },
 
-    /* [尸体复活者赫伯特·威斯特 / Herbert West – Reanimator](Lovecraft/Herbert West – Reanimator.md) */
+    /* 尸体复活者赫伯特·威斯特 / Herbert West – Reanimator */
     {
         title: 'Herbert West—Reanimator',
         title_zh: '赫伯特•韦斯特 — 尸体复生者',
@@ -398,7 +533,7 @@ export const download_list_HPL: DownloadList = [
         }]
     },
 
-    /* [《死灵之书》的历史 / History of the Necronomicon](Lovecraft/History of the Necronomicon.md) */
+    /* 《死灵之书》的历史 / History of the Necronomicon */
     {
         title: 'History of the Necronomicon',
         title_zh: '《死灵之书》的历史',
@@ -415,7 +550,7 @@ export const download_list_HPL: DownloadList = [
         }]
     },
 
-    /* [巫兽的宝藏 / The Hoard of the Wizard-Beast](Lovecraft/The Hoard of the Wizard-Beast.md)*/
+    /* 巫兽的宝藏 / The Hoard of the Wizard-Beast*/
     {
         title: 'The Hoard of the Wizard-Beast',
         title_zh: '巫兽的宝藏',
@@ -431,7 +566,7 @@ export const download_list_HPL: DownloadList = [
             ]
         }]
     },
-    /* [马丁海滩的怪物 / The Horror at Martin's Beach](Lovecraft/The Horror at Martin's Beach.md) */
+    /* 马丁海滩的怪物 / The Horror at Martin's Beach */
     {
         title: "The Horror at Martin's Beach",
         title_zh: '马丁海滩的怪物',
@@ -448,7 +583,7 @@ export const download_list_HPL: DownloadList = [
         }]
     },
 
-    /* [雷德胡克的恐怖 / The Horror at Red Hook](Lovecraft/The Horror at Red Hook.md) */
+    /* 雷德胡克的恐怖 / The Horror at Red Hook */
     {
         title: "The Horror at Red Hook",
         title_zh: '雷德胡克的恐怖',
@@ -465,7 +600,7 @@ export const download_list_HPL: DownloadList = [
         }]
     },
 
-    /* [墓园里的恐怖 / The Horror in the Burying-Ground](Lovecraft/The Horror in the Burying-Ground.md) */
+    /* 墓园里的恐怖 / The Horror in the Burying-Ground */
     {
         title: "The Horror in the Burying-Ground",
         title_zh: '墓园里的恐怖',
@@ -482,7 +617,7 @@ export const download_list_HPL: DownloadList = [
         }]
     },
 
-    /* [蜡像馆惊魂 / The Horror in the Museum](Lovecraft/The Horror in the Museum.md) */
+    /* 蜡像馆惊魂 / The Horror in the Museum */
     {
         title: "The Horror in the Museum",
         title_zh: '蜡像馆惊魂',
@@ -499,10 +634,39 @@ export const download_list_HPL: DownloadList = [
         }]
     },
 
-    /* [猎犬 / The Hound](Lovecraft/The Hound.md) TODO 译者cimar
-    * [休普诺斯 / Hypnos](Lovecraft/Hypnos.md) TODO 译者玖羽
-    * [伊比德 / Ibid](Lovecraft/Ibid.md) TODO 译者玖羽
-    * [地窖中 / In the Vault](Lovecraft/In-the-Vault.md) */
+    /* 猎犬 / The Hound TODO 译者cimar */
+
+    /* 休普诺斯 / Hypnos */
+    {
+        title: "Hypnos",
+        title_zh: '休普诺斯',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=22705',
+            selector: [
+                // 正文
+                '#post-137757',
+            ]
+        }]
+    },
+
+    /* 伊比德 / Ibid */
+    {
+        title: "Ibid",
+        title_zh: '伊比德',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=20952',
+            selector: [
+                // 正文
+                '#post-127988',
+            ]
+        }]
+    },
+
+    /* 地窖中 / In the Vault */
     {
         title: "In the Vault",
         title_zh: '地窖中',
@@ -519,7 +683,7 @@ export const download_list_HPL: DownloadList = [
         }]
     },
 
-    /* [厄瑞克斯之墙 / In the Walls of Eryx](Lovecraft/In the Walls of Eryx.md) */
+    /* 厄瑞克斯之墙 / In the Walls of Eryx */
     {
         title: "In the Walls of Eryx",
         title_zh: '厄瑞克斯之墙',
@@ -536,7 +700,7 @@ export const download_list_HPL: DownloadList = [
         }]
     },
 
-    /* [最终测试 / The Last Test](Lovecraft/The Last Test.md) */
+    /* 最终测试 / The Last Test */
     {
         title: "The Last Test",
         title_zh: '最终测试',
@@ -561,8 +725,15 @@ export const download_list_HPL: DownloadList = [
         }]
     },
 
-    /* [小玻璃瓶 / The Little Glass Bottle](Lovecraft/The Little Glass Bottle.md) */
+    /* 小玻璃瓶 / The Little Glass Bottle */
     {
+        // 竹子译版
+        /*
+          神秘船 / The Mysterious Ship
+          墓园之谜 / The Mystery of the Grave-Yard
+          隐秘的洞穴，或约翰·李的冒险 / The Secret Cave or John Lees Adventure
+          FIXME 同一帖子中还有上面3篇HPL童年作品，应分成3个md
+        */
         title: "The Little Glass Bottle",
         title_zh: '小玻璃瓶',
 
@@ -577,12 +748,14 @@ export const download_list_HPL: DownloadList = [
             ]
         }]
 
-        // TODO 玖羽翻译
+        // TODO 加上玖羽的翻译
     },
-    /* [可爱的死者 / The Loved Dead](Lovecraft/The Loved Dead.md)
-    * [潜伏的恐惧 / The Lurking Fear](Lovecraft/The Lurking Fear.md)
-    * [石像 / The Man of Stone](Lovecraft/The Man of Stone.md)
-    * [美杜莎的卷发 / Medusa's Coil](Lovecraft/Medusa's Coil.md) */
+
+    /* 可爱的死者 / The Loved Dead
+    * 潜伏的恐惧 / The Lurking Fear
+    * 石像 / The Man of Stone */
+
+    /* 美杜莎的卷发 / Medusa's Coil */
     {
         title: "Medusa’s Coil",
         title_zh: '美杜莎的卷发',
@@ -608,9 +781,26 @@ export const download_list_HPL: DownloadList = [
             ]
         }]
     },
-    /* [记忆 / Memory](Lovecraft/Memory.md)
-    * [月之沼 / The Moon-Bog](Lovecraft/The Moon-Bog.md)
-    * [丘 / The Mound](Lovecraft/The Mound.md) */
+    /* 记忆 / Memory */
+    {
+        // 玖羽译版
+        title: "Memory",
+        title_zh: '记忆',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=22785',
+            selector: [
+                // 正文
+                '#post-138165',
+            ]
+        }]
+        // TODO 还有个竹子校对的版本
+    },
+
+    /* 月之沼 / The Moon-Bog */
+
+    /* 丘 / The Mound */
     {
         title: "The Mound",
         title_zh: '丘',
@@ -639,7 +829,7 @@ export const download_list_HPL: DownloadList = [
         }]
     },
 
-    /* [埃里奇·赞之曲 / The Music of Erich Zann](Lovecraft/The Music of Erich Zann.md) */
+    /* 埃里奇·赞之曲 / The Music of Erich Zann */
     {
         title: "The Music of Erich Zann",
         title_zh: '埃里奇·赞之曲',
@@ -656,14 +846,8 @@ export const download_list_HPL: DownloadList = [
         }]
     },
 
-    /*
-      [神秘船 / The Mysterious Ship](Lovecraft/The Mysterious Ship.md)
-      [墓园之谜 / The Mystery of the Grave-Yard](Lovecraft/The Mystery of the Grave-Yard.md)
-      [隐秘的洞穴，或约翰·李的冒险 / The Secret Cave or John Lees Adventure](Lovecraft/The Secret Cave or John Lees Adventure.md)
-      TODO 这3篇也是HPL童年作品，和<<小玻璃瓶>>是同一帖子，应分成3个md
-    */
 
-    /* [无名都市 / The Nameless City](Lovecraft/The Nameless City.md) */
+    /* 无名都市 / The Nameless City */
     {
         title: "The Nameless City",
         title_zh: '无名之城',
@@ -680,10 +864,24 @@ export const download_list_HPL: DownloadList = [
         }]
     },
 
-    /* [夜之洋 / The Night Ocean](Lovecraft/The Night Ocean.md)
-    * [奈亚拉托提普 / Nyarlathotep](Lovecraft/Nyarlathotep.md) */
+    /* 夜之洋 / The Night Ocean */
 
-    /* [老臭虫 / Old Bugs](Lovecraft/Old Bugs.md) */
+    /* 奈亚拉托提普 / Nyarlathotep */
+    {
+        title: "Nyarlathotep",
+        title_zh: '奈亚拉托提普',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=20915',
+            selector: [
+                // 正文
+                '#post-127853',
+            ]
+        }]
+    },
+
+    /* 老臭虫 / Old Bugs */
     {
         title: "Old Bugs",
         title_zh: '老臭虫',
@@ -700,9 +898,22 @@ export const download_list_HPL: DownloadList = [
         }]
     },
 
-    /* [蕃神 / The Other Gods](Lovecraft/The Other Gods.md) */
+    /* 蕃神 / The Other Gods */
+    {
+        title: "The Other Gods",
+        title_zh: '蕃神',
 
-    /* [超越万古 / Out of the Aeons](Lovecraft/Out of the Aeons.md) */
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/forum/index.php?showtopic=21392',
+            selector: [
+                // 正文
+                '#post-130441',
+            ]
+        }]
+    },
+
+    /* 超越万古 / Out of the Aeons */
     {
         title: "Out of the Aeons",
         title_zh: '超越万古',
@@ -727,8 +938,9 @@ export const download_list_HPL: DownloadList = [
         }]
     },
 
-    /* [异乡人 / The Outsider](Lovecraft/The Outsider.md) */
+    /* 异乡人 / The Outsider */
     {
+        // 竹子译版
         title: "The Outsider",
         title_zh: '异乡人',
 
@@ -742,10 +954,26 @@ export const download_list_HPL: DownloadList = [
                 '#post-105743',
             ]
         }]
+
+        // TODO 加上玖羽译版
     },
-    /* [皮克曼的模特 / Pickman's Model](Lovecraft/Pickman's Model.md)
-    -->
-    * [屋中画 / The Picture in the House](/HPL/The-Picture-in-the-House.md) */
+
+    /* 皮克曼的模特 / Pickman's Model */
+    {
+        title: "Pickman's Model",
+        title_zh: '皮克曼的模特',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=27185',
+            selector: [
+                // 正文
+                '#post-166071',
+            ]
+        }]
+    },
+
+    /* [屋中画 / The Picture in the House](/HPL/The-Picture-in-the-House.md) */
     {
         title: "The Picture in the House",
         title_zh: '屋中画',
@@ -762,10 +990,54 @@ export const download_list_HPL: DownloadList = [
         }]
     },
 
-    /* [诗与诸神 / Poetry and the Gods](Lovecraft/Poetry and the Gods.md)
-    * [北极星 / Polaris](Lovecraft/Polaris.md)
-    * [伊拉农的探求 / The Quest of Iranon](Lovecraft/The Quest of Iranon.md)
-    * [墙中之鼠 / The Rats in the Walls](Lovecraft/The Rats in the Walls.md) */
+    /* 诗与诸神 / Poetry and the Gods */
+    {
+        title: "Poetry and the Gods",
+        title_zh: '诗与诸神',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=25499',
+            selector: [
+                // 正文
+                '#post-156329',
+                // 背景
+                '#post-156330'
+            ]
+        }]
+    },
+
+    /* 北极星 / Polaris */
+    {
+        title: "Polaris",
+        title_zh: '北极星',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=21543',
+            selector: [
+                // 正文
+                '#post-131384',
+            ]
+        }]
+    },
+
+    /* 伊拉农的探求 / The Quest of Iranon */
+    {
+        title: "The Quest of Iranon",
+        title_zh: '伊拉农的探求',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=21374',
+            selector: [
+                // 正文
+                '#post-130284',
+            ]
+        }]
+    },
+
+    /* 墙中之鼠 / The Rats in the Walls */
     {
         title: "The Rats in the Walls",
         title_zh: '墙中之鼠',
@@ -782,7 +1054,7 @@ export const download_list_HPL: DownloadList = [
         }]
     },
 
-    /* [回忆塞缪尔·约翰逊博士 / A Reminiscence of Dr. Samuel Johnson](Lovecraft/A Reminiscence of Dr. Samuel Johnson.md)*/
+    /* 回忆塞缪尔·约翰逊博士 / A Reminiscence of Dr. Samuel Johnson*/
     {
         title: "A Reminiscence of Dr. Samuel Johnson",
         title_zh: '回忆塞缪尔•约翰逊博士',
@@ -799,7 +1071,7 @@ export const download_list_HPL: DownloadList = [
         }]
     },
 
-    /* [超越时间之影 / The Shadow Out of Time](Lovecraft/The Shadow Out of Time.md) */
+    /* 超越时间之影 / The Shadow Out of Time */
     {
         title: "The Shadow Out of Time",
         title_zh: '超越时间之影',
@@ -830,7 +1102,7 @@ export const download_list_HPL: DownloadList = [
         }]
     },
 
-    /* [印斯茅斯之影 / The Shadow Over Innsmouth](Lovecraft/The Shadow Over Innsmouth.md) */
+    /* 印斯茅斯之影 / The Shadow Over Innsmouth */
     {
         title: "The Shadow Over Innsmouth",
         title_zh: '印斯茅斯的阴霾',
@@ -857,7 +1129,7 @@ export const download_list_HPL: DownloadList = [
         }]
     },
 
-    /* [畏避之屋 / The Shunned House](Lovecraft/The Shunned House.md) */
+    /* 畏避之屋 / The Shunned House */
     {
         title: "The Shunned House",
         title_zh: '畏避之屋',
@@ -882,7 +1154,7 @@ export const download_list_HPL: DownloadList = [
         }]
     },
 
-    /* [银钥匙 / The Silver Key](Lovecraft/The Silver Key.md) */
+    /* 银钥匙 / The Silver Key */
     {
         title: "The Silver Key",
         title_zh: '银钥匙',
@@ -899,8 +1171,7 @@ export const download_list_HPL: DownloadList = [
         }]
     },
 
-    /* [诛杀怪物 / The Slaying of the Monster](Lovecraft/The Slaying of the Monster.md)
-    * [兰道夫·卡特的供述 / The Statement of Randolph Carter](Lovecraft/The Statement of Randolph Carter.md)*/
+    /* 兰道夫·卡特的供述 / The Statement of Randolph Carter*/
     {
         title: "The Statement of Randolph Carter",
         title_zh: '伦道夫·卡特的供述',
@@ -917,13 +1188,70 @@ export const download_list_HPL: DownloadList = [
         }]
     },
 
-    /* [雾中怪屋 / The Strange High House in the Mist](Lovecraft/The Strange High House in the Mist.md)
-    * [道路 / The Street](Lovecraft/The Street.md)
-    * [甜美的艾门嘉德 / Sweet Ermengarde](Lovecraft/Sweet Ermengarde.md)
-    * [神殿 / The Temple](Lovecraft/The Temple.md)
-    * [可怕的老人 / The Terrible Old Man](Lovecraft/The Terrible Old Man.md)
-    * [月下之物 / The Thing in the Moonlight](Lovecraft/The Thing in the Moonlight.md)
-    * [门口的东西 / The Thing on the Doorstep](Lovecraft/The Thing on the Doorstep.md) */
+    /* 雾中怪屋 / The Strange High House in the Mist */
+    {
+        title: "The Strange High House in the Mist",
+        title_zh: '雾中怪屋',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=27395',
+            selector: [
+                // 正文
+                '#post-167095',
+            ]
+        }]
+    },
+
+    /* 道路 / The Street */
+    {
+        title: "The Street",
+        title_zh: '道路',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=22120',
+            selector: [
+                // 正文
+                '#post-134340',
+            ]
+        }]
+    },
+
+    /* 甜美的艾门嘉德 / Sweet Ermengarde */
+
+    /* 神殿 / The Temple */
+    {
+        title: "The Temple",
+        title_zh: '神殿',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=21250',
+            selector: [
+                // 正文
+                '#post-129456',
+            ]
+        }]
+    },
+
+    /* 可怕的老人 / The Terrible Old Man */
+    {
+        title: "The Terrible Old Man",
+        title_zh: '可怕的老人',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=27394',
+            selector: [
+                // 正文
+                '#post-167094',
+            ]
+        }]
+    },
+
+    /* 月下之物 / The Thing in the Moonlight
+    * 门口的东西 / The Thing on the Doorstep */
     {
         title: "The Thing on the Doorstep",
         title_zh: '门外之物',
@@ -952,7 +1280,7 @@ export const download_list_HPL: DownloadList = [
         }]
     },
 
-    /* [穿越银匙之门 / Through the Gates of the Silver Key](Lovecraft/Through the Gates of the Silver Key.md)*/
+    /* 穿越银匙之门 / Through the Gates of the Silver Key*/
     {
         title: "Through The Gates of Silver Key",
         title_zh: '穿越银匙之门',
@@ -983,7 +1311,7 @@ export const download_list_HPL: DownloadList = [
         }]
     },
 
-    /* [直至诸海…… / Till A' the Seas](Lovecraft/Till A' the Seas.md) */
+    /* 直至诸海…… / Till A' the Seas */
     {
         title: "Till A’ the Seas",
         title_zh: '直至诸海',
@@ -1000,7 +1328,7 @@ export const download_list_HPL: DownloadList = [
         }]
     },
 
-    /* [坟墓 / The Tomb](Lovecraft/The Tomb.md) */
+    /* 坟墓 / The Tomb */
     {
         title: "The Tomb",
         title_zh: '坟墓',
@@ -1017,8 +1345,22 @@ export const download_list_HPL: DownloadList = [
         }]
     },
 
-    /* [胡安·罗梅洛的变貌 / The Transition of Juan Romero](Lovecraft/The Transition of Juan Romero.md)
-    * [圈套 / The Trap](Lovecraft/The Trap.md) */
+    /* 胡安·罗梅洛的变貌 / The Transition of Juan Romero */
+    {
+        title: "The Transition of Juan Romero",
+        title_zh: '胡安·罗梅洛的变貌',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=22530',
+            selector: [
+                // 正文
+                '#post-136600',
+            ]
+        }]
+    },
+
+    /* 圈套 / The Trap */
     {
         title: "Trap",
         title_zh: '圈套',
@@ -1035,8 +1377,22 @@ export const download_list_HPL: DownloadList = [
         }]
     },
 
-    /* [树 / The Tree](Lovecraft/The Tree.md)
-    * [山上的树 / The Tree on the Hill](Lovecraft/The Tree on the Hill.md)*/
+    /* 树 / The Tree */
+    {
+        title: "The Tree",
+        title_zh: '树',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=22717',
+            selector: [
+                // 正文
+                '#post-137815',
+            ]
+        }]
+    },
+    
+    /* 山上的树 / The Tree on the Hill*/
     {
         title: "The Tree on the Hill",
         title_zh: '山上的树',
@@ -1053,7 +1409,7 @@ export const download_list_HPL: DownloadList = [
         }]
     },
 
-    /* [两只黑瓶 / Two Black Bottles](Lovecraft/Two Black Bottles.md) */
+    /* 两只黑瓶 / Two Black Bottles */
     {
         title: "Two Black Bottles",
         title_zh: '两只黑瓶',
@@ -1068,7 +1424,7 @@ export const download_list_HPL: DownloadList = [
         }]
     },
 
-    /* [金字塔下 / Under the Pyramids](Lovecraft/Under the Pyramids.md) */
+    /* 金字塔下 / Under the Pyramids */
     {
         title: "The Tomb",
         title_zh: '坟墓',
@@ -1087,7 +1443,7 @@ export const download_list_HPL: DownloadList = [
         }]
     },
 
-    /* [不可名状 / The Unnamable](Lovecraft/The Unnamable.md) */
+    /* 不可名状 / The Unnamable */
     {
         title: "The Unnamable",
         title_zh: '不可名状',
@@ -1104,8 +1460,22 @@ export const download_list_HPL: DownloadList = [
         }]
     },
 
-    /* [远古的民族 / The Very Old Folk](Lovecraft/The Very Old Folk.md)
-    * [月光下 / What the Moon Brings](Lovecraft/What the Moon Brings.md) */
+    /* 远古的民族 / The Very Old Folk */
+    {
+        title: "The Very Old Folk",
+        title_zh: '远古的民族',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=23298',
+            selector: [
+                // 正文
+                '#post-141034',
+            ]
+        }]
+    },
+
+    /* 月光下 / What the Moon Brings */
     {
         title: "What the Moon Brings",
         title_zh: '月光下',
@@ -1122,7 +1492,7 @@ export const download_list_HPL: DownloadList = [
         }]
     },
 
-    /* [暗夜呢喃 / The Whisperer in Darkness](Lovecraft/The Whisperer in Darkness.md) */
+    /* 暗夜呢喃 / The Whisperer in Darkness */
     {
         title: "The Whisperer in Darkness",
         title_zh: '暗夜呢喃',
@@ -1153,8 +1523,22 @@ export const download_list_HPL: DownloadList = [
         }]
     },
 
-    /* [白船 / The White Ship](Lovecraft/The White Ship.md)
-    * [有翼死神 / Winged Death](Lovecraft/Winged Death.md)*/
+    /* 白船 / The White Ship */
+    {
+        title: "The White Ship",
+        title_zh: '白船',
+
+        prefix: 'HPL',
+        source: [{
+            url: 'http://trow.cc/board/index.php?showtopic=27191',
+            selector: [
+                // 正文
+                '#post-166094',
+            ]
+        }]
+    },
+
+    /* 有翼死神 / Winged Death*/
     {
         title: "Winged Death",
         title_zh: '有翼死神',
@@ -1171,8 +1555,8 @@ export const download_list_HPL: DownloadList = [
         }]
     },
 
-    /* [怪奇小说创作笔记 / Notes on Writing Weird Fiction](Lovecraft/Notes on Writing Weird Fiction.md)
-    * [文学中的超自然恐怖 / Supernatural Horror in Literature](Lovecraft/Supernatural Horror in Literature.md)
+    /* 怪奇小说创作笔记 / Notes on Writing Weird Fiction
+    * 文学中的超自然恐怖 / Supernatural Horror in Literature
     -->
     
     <!-- 此列表来自玖羽: http://trow.cc/board/index.php?showtopic=19824 -->
@@ -1184,6 +1568,6 @@ export const download_list = [
 
     download_list_HPL
 
-].reduce(function (mem, v) {
+].reduce(function(mem, v) {
     return mem.concat(v);
 }, []);

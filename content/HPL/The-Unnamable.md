@@ -102,11 +102,11 @@ _[注：Meadow Hill ]_
 
 -----------
 
-本文写于1923年9月，然后出版在了1925年的《Weird Tales》上。属于洛夫克拉夫特的早期作品，也是很古派的恐怖小说调调——显然有爱伦坡的痕迹在里面。虽然当时没有很大的影响，但是后来倒是频频再版（主要也是最近这些年的再版）。另外这篇小说还被改编成了电影（1988年）——不过我没看过，在IMDb的评分只有4.6……
+本文写于1923年9月，然后出版在了1925年的《Weird Tales》上。属于洛夫克拉夫特的早期作品，也是很古派的恐怖小说调调——显然有爱伦坡的痕迹在里面。虽然当时没有很大的影响，但是后来倒是频频再版 (主要也是最近这些年的再版) 。另外这篇小说还被改编成了电影（1988年）——不过我没看过，在IMDb的评分只有4.6……
 
 本文另外一个受关注的地方在于它的叙述者“Carter”，由于行文的风格和carter的系列故事类似，而且在《银钥匙》中也提到过Randolph Carter曾当过小说作家，而且也暗指过这件事情——“在这里，他体验到了那种在一片漆黑中，置身于那些古老的柳树与摇摇欲坠的复折屋顶之间时所感受到的某名恐惧。”——所以一般将它看作Randolph Carter系列故事中的一个。
 
-另外，文中“此外，他还补充说，我时常谈论的那些“不可名状”与“不宜提及”的东西也都是些极其幼稚的伎俩，与我在作家圈子里低下的地位倒是非常相称。我过于喜好在故事的结尾用一些场景或声音将故事的英雄吓得目瞪口呆，无能为力；让他们再没有勇气、言语或是联想去述说他们所经历的事情。”（"he added, my constant talk about 'unnamable' and 'unmentionable' things was a very puerile device, quite in keeping with my lowly standing as an author. I was too fond of ending my stories with sights or sounds which paralysed my heroes’ faculties and left them without courage, words, or associations to tell what they had experienced." ）也普遍被认为是洛夫克拉夫特先生对自己这一阶段写作特点的自嘲和批评。
+另外，文中“此外，他还补充说，我时常谈论的那些“不可名状”与“不宜提及”的东西也都是些极其幼稚的伎俩，与我在作家圈子里低下的地位倒是非常相称。我过于喜好在故事的结尾用一些场景或声音将故事的英雄吓得目瞪口呆，无能为力；让他们再没有勇气、言语或是联想去述说他们所经历的事情。” ("he added, my constant talk about 'unnamable' and 'unmentionable' things was a very puerile device, quite in keeping with my lowly standing as an author. I was too fond of ending my stories with sights or sounds which paralysed my heroes’ faculties and left them without courage, words, or associations to tell what they had experienced." ) 也普遍被认为是洛夫克拉夫特先生对自己这一阶段写作特点的自嘲和批评。
 
 （说实话。评价倒是蛮准的，就是不见长进）
 

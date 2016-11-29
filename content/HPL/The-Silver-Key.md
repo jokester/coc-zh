@@ -10,7 +10,7 @@
 
 本译者英语水平有限，该文用词用句特别怪异，故很难精准。如发觉用词怪异，描述离奇之现象虽当追究译者责任，也须考虑洛夫克拉夫特先生诸多怪异修辞手法的问题。
 
-本文与常见的克苏鲁神话有很大不同（不恐怖……），相当晦涩（即便对克苏鲁神话来说亦是。）反而更加像是一篇散文。阅读前请有心理准备。
+本文与常见的克苏鲁神话有很大不同 (不恐怖……) ，相当晦涩（即便对克苏鲁神话来说亦是。）反而更加像是一篇散文。阅读前请有心理准备。
 
 愿旧日支配者安息
 
@@ -98,11 +98,11 @@
 
 [2]galley，翻了一下书，准确地说，这个词是指古希腊、古罗马时候用的那种单层多桨的大战船
 
-[3]Oukranos，这是河神、或者某个河神的名字。该河神是个Great Ones——不是旧日支配者（The Great Old Ones），这个词是指一些地球上的弱神。他们统治着梦境之地（The Dreamland），被奈亚拉托提普所保护。
+[3]Oukranos，这是河神、或者某个河神的名字。该河神是个Great Ones——不是旧日支配者 (The Great Old Ones) ，这个词是指一些地球上的弱神。他们统治着梦境之地（The Dreamland），被奈亚拉托提普所保护。
 
-[4]Thran，找不到很清楚的出处，似乎是梦境之地（The Dreamland）里的一个城市，也可能是随意杜撰的名字
+[4]Thran，找不到很清楚的出处，似乎是梦境之地 (The Dreamland) 里的一个城市，也可能是随意杜撰的名字
 
-[5]Kled，同上，可能是梦境之地（The Dreamland）里的一个地方
+[5]Kled，同上，可能是梦境之地 (The Dreamland) 里的一个地方
 
 [6]Narath ，出处不明。可能是梦境之地里的城市。不过有一个同样名字的城市在印度。
 
@@ -114,7 +114,7 @@
 
 [10]这里可能是批判十九世纪末，西方流行的认为动物本能是人类行为的原始驱动的观点。下面还顺道批判了无政府主义，洛夫克拉夫特明确地用了anarchy
 
-[11]with which (the flimsy logic) their champions tried to gild brute impulse with a sacredness stripped from the idols they had discarded. 貌似是隐喻文艺复兴中人性的解放。
+[11]with which  (the flimsy logic)  their champions tried to gild brute impulse with a sacredness stripped from the idols they had discarded. 貌似是隐喻文艺复兴中人性的解放。
 
 [12]priestcraft
 
@@ -128,7 +128,7 @@
 
 [17]这里用了oblivion，但是单单说“遗忘”好像不太对味。
 
-[18]Saracens，源自希腊语，撒拉森人，该词首先出现在欧洲用来指阿拉伯人，然后又被用来做指北非、中东地区信奉伊斯兰教的人（十字军东征时期）。
+[18]Saracens，源自希腊语，撒拉森人，该词首先出现在欧洲用来指阿拉伯人，然后又被用来做指北非、中东地区信奉伊斯兰教的人 (十字军东征时期) 。
 
 [19] when Elizabeth was queen，可能是指伊丽莎白女王一世，1533.9.7-1603.3.24
 
@@ -144,33 +144,33 @@
 
 [25]Randy伦道夫的昵称，注意这里的先生，应该是指仆人对小主人的尊称，不是说成人之间的那种“先生”的意思
 
-[26]Cockney，如果不是帕克斯的姓，就是指生活在伦敦东区（工人阶级）的人
+[26]Cockney，如果不是帕克斯的姓，就是指生活在伦敦东区 (工人阶级) 的人
 
 [27]They's things abroad what dun't do nobody no good完全不知道后半句在说什么
 
-[28]Pleiades 昴宿星（团），金牛座内一个大而明亮的疏散星团。中国古代二十八宿之一。
+[28]Pleiades 昴宿星 (团) ，金牛座内一个大而明亮的疏散星团。中国古代二十八宿之一。
 
 [29]faun,在罗马神话中指野外林地的精灵或妖精是一种带角的半人半羊，有山羊一样的蹄子。
 
-[30]aegipan,源自希腊神话，根据Hyginus的说法他是宙斯之子（据说宙斯和山羊的儿子……），后来又有人把它视为潘（自然之神）的父亲。也有人认为他和潘是同一个。
+[30]aegipan,源自希腊神话，根据Hyginus的说法他是宙斯之子 (据说宙斯和山羊的儿子……) ，后来又有人把它视为潘（自然之神）的父亲。也有人认为他和潘是同一个。
 
 [31]dryad，早期希腊神话中橡树女神，在后来的希腊神话中，它泛指各种树木的女神。形象是一个美丽的女人
 
 [32]dreamer
 
-[33] UltharLovecraft小说中虚构的一个小镇，曾出现于小说The Dream-Quest of Unknown Kadath (1926)， "The Cats of Ulthar" (1920) 和 "The Other Gods" (1933)。具体位置不知
+[33] UltharLovecraft小说中虚构的一个小镇，曾出现于小说The Dream-Quest of Unknown Kadath  (1926) ， "The Cats of Ulthar" (1920) 和 "The Other Gods" (1933)。具体位置不知
 
 [34]River Skai 乌撒边的一条河，具体位置也不知
 
-[35] the opal throne of Ilek-Vad Ilek-Vad 梦境之地的一个城市，在《穿越银匙之门》和《梦寻秘境卡达斯》中也有提到，在《门》一文中（好像）提到被伦道夫-卡特所统治
+[35] the opal throne of Ilek-Vad Ilek-Vad 梦境之地的一个城市，在《穿越银匙之门》和《梦寻秘境卡达斯》中也有提到，在《门》一文中 (好像) 提到被伦道夫-卡特所统治
 
 [36] fabulous town of turrets 就是前面提到的Ilek-Vad
 
-[37] Gnorri Ilek-Vad下方海洋中一种类似人鱼（雄性人鱼），但拥有额外一到两条手臂的生物。
+[37] Gnorri Ilek-Vad下方海洋中一种类似人鱼 (雄性人鱼) ，但拥有额外一到两条手臂的生物。
 
 最后特别谢谢包子大人的翻译协助……拜谢
 
-本文曾被《Weird Tales》拒稿（后来又收下了，1929.1月刊），我一点都不惊讶……它是在很难懂……
+本文曾被《Weird Tales》拒稿 (后来又收下了，1929.1月刊) ，我一点都不惊讶……它是在很难懂……
 
 不过E. Hoffmann Price很欣赏这篇故事……后来他和Lovecraft一同又写了它的续篇《穿越银匙之门》。两篇文章组成了洛夫克拉夫特先生“梦境系列”小说的结尾。
 

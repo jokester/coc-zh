@@ -1,13 +1,11 @@
 /**
- * TypeScript declaration for libtidy v0.3.0
+ * TypeScript declaration file for libtidy v0.3
  * 
  * @author Wang Guan <momocraft@gmail.com>
  */
-declare module 'libtidy' {
 
-    /**
-     * Types shared by all APIs
-     */
+declare module 'libtidy' {
+    export = LibTidyModule
 
     /**
      *  Callback convention
@@ -26,11 +24,6 @@ declare module 'libtidy' {
         output?: Buffer
     }
 
-    // TODO
-    type OptKey = "1" | 1
-
-    type OptValue = 1 | 0 | boolean
-
     /**
      * The document is assumed to be a buffer or a string.
      * Anything else will be converted to a string and then turned into
@@ -38,17 +31,35 @@ declare module 'libtidy' {
      */
     type TidyDocument = string | Buffer | any
 
-    interface TidyOptions {
+    module Options {
+
+        // TODO
+        type OptKey = "1" | 1
+
+        type OptValue = 1 | 0 | boolean
+
+        type TidyOptionByName = "1" | "2"
+
+        type TidyOptionByID = 1 | 2
+
+        /**
+         * An available option
+         */
+        interface TidyOption {
+            // TODO name, category, id, type, readOnly, default, pickList
+        }
+
+        type OptionKey = TidyOption | TidyOptionByName | TidyOptionByID
+ 
+        interface TidyOptionConstructor {
+            new (): TidyOption
+        }
+
+        interface OptionDictionary {
+            
+        }
 
     }
-
-    /**
-     * An available option
-     */
-    interface TidyOption {
-        // TODO name, category, id, type, readOnly, default, pickList
-    }
-
     /**
      * Callback convention for async APIs
      */
@@ -67,7 +78,7 @@ declare module 'libtidy' {
          * turned into a buffer.
          */
         interface TidyBufferStatic {
-            (document: string, options: TidyOptions,
+            (document: string, options: Options.TidyOptions,
                 callback: TidyCB): void
 
             (document: string, callback: TidyCB): void
@@ -112,7 +123,10 @@ declare module 'libtidy' {
     module LibTidyModule {
         export const tidyBuffer: HighLevel.TidyBufferStatic
         export const TidyDoc: BasicWorkflow.TidyDocConstructor
+        export const TidyOption: Options.TidyOptionConstructor
     }
 
-    export = LibTidyModule
+    // a large module for options and possible values
+
+
 }
