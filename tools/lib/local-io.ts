@@ -5,7 +5,7 @@ import { DownloadItem } from './download';
 import { logger_normal as logger } from './util';
 
 function writeFile(absPath: string, content: string): Promise<void> {
-    return new Promise(function (fulfill, reject) {
+    return new Promise<void>(function (fulfill, reject) {
         fs.writeFile(absPath, content, function (err) {
             if (err) {
                 logger.w(`error writing ${absPath}`);

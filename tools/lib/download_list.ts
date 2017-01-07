@@ -1391,7 +1391,7 @@ export const download_list_HPL: DownloadList = [
             ]
         }]
     },
-    
+
     /* 山上的树 / The Tree on the Hill*/
     {
         title: "The Tree on the Hill",
@@ -1568,6 +1568,14 @@ export const download_list = [
 
     download_list_HPL
 
-].reduce(function(mem, v) {
+].reduce(function (mem, v) {
     return mem.concat(v);
-}, []);
+}, []).sort((a, b) => compare_str(a.title, b.title));
+
+export function compare_str(a: string, b: string): number {
+    if (a < b)
+        return -1;
+    else if (a === b)
+        return 0;
+    return 1;
+}

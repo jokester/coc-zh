@@ -1,13 +1,24 @@
 import { download_list } from './download_list';
-import { ArrayM } from './util';
+import { ArrayM, logger_normal as logger } from './util';
 
 const hr = '-----------';
+
+interface FilterState {
+    footmarkUsed: number;
+    footmarkProvided: number;
+}
+
 /**
  * 修正html转换成的md的格式
  */
-export function filter_md(md: string): string {
+export function filter_md(md: string, itemDesc: string): string {
     // non-empty lines from md
     const lines = md.split(/[\r\n]+/);
+
+    const state: FilterState = {
+        footmarkUsed: 0,
+        footmarkProvided: 0
+    };
 
     const newLines = new ArrayM(lines)
         .map(trimRight)
@@ -16,11 +27,17 @@ export function filter_md(md: string): string {
         .map(fix_title)
         .map(change_hr)
         .map(beautify_parensis)
+        .map(to_footnote_content.bind(null, state))
+        .map(to_footnote_mark.bind(null, state))
         .bind(format_parts)
         .bind(format_metadata)
         .tap(removeConsecutiveHR)
         .bind(dropLastHR)
         .toArray();
+
+    if (state.footmarkUsed !== state.footmarkProvided) {
+        logger.w(`${itemDesc} footmarkUsed=${state.footmarkUsed} /= footmarkProvided=${state.footmarkProvided}`);
+    }
 
     return newLines.join("\n\n") + "\n";
 }
@@ -165,10 +182,37 @@ function dropLastHR(line: string, lineNum: number, wholeArray: string[]): string
  * 并统一为半角括号
  */
 function beautify_parensis(line: string): string {
-    return line.replace(/(.)[(（](.*?)[)）](.)/, function(matched, left, inside, right) {
+    return line.replace(/(.)[(（](.*?)[)）](.)/, function (matched, left, inside, right) {
         if (left !== ']')
             return `${left} (${inside}) ${right}`;
 
         return matched;
     })
+}
+
+/**
+ * 脚注链接: 将 `[注n]`替换为`[^m]`
+ * 重新编号的状态在state
+ * 
+ * 见 https://github.com/GitbookIO/gitbook/issues/395
+ */
+function to_footnote_mark(state: FilterState, line: string): string {
+    return line.replace(/(?!^)\[注(\d*?)\]/g, function (matched, footmarkNo) {
+        return `[^${++state.footmarkUsed}]`;
+    });
+}
+
+/**
+ * 脚注内容 (重新编号)
+ */
+function to_footnote_content(state: FilterState, line: string): string {
+
+    function wtf(matched: any, footmarkNo: any, content: string) {
+        return `[^${++state.footmarkProvided}]: ${content}`;
+    };
+
+    const l1 = line.replace(/^_\[注(\d*[:：]?)\](.*)_$/, wtf);
+    const l2 = l1.replace(/^_?\[注(\d*[:：]?)(.*?)\]?_?$/, wtf);
+
+    return l2;
 }
