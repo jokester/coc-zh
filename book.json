@@ -1,8 +1,12 @@
 {
     "title": "克苏鲁神话",
+    "description": "克苏鲁神话中文合集 (非商业)",
     "language": "zh",
     "root": "./content",
-    "plugins": ["-search", "-lunr"],
+    "plugins": ["-search", "-lunr", "github"],
     "pluginsConfig": {
+        "github": {
+          "url": "https://github.com/jokester/coc-zh"
+        }
     }
 }
