@@ -15,7 +15,7 @@ declare module 'libtidy' {
          * errlog contains the error messages generated during the run,
          * formatted as a string including a trailing newline.
          */
-        errlog: string
+        errlog?: string
         /**
          * contains the output buffer if output was generated.
          * The property is unset if generating output was not part of the method
@@ -47,21 +47,22 @@ declare module 'libtidy' {
 
         type OptionKey = TidyOption | TidyOptionByName | TidyOptionByID
         type OptValue = any
- 
+
         interface TidyOptionConstructor {
             new (): TidyOption
         }
 
         interface OptionDictionary {
-            
+            // TODO: everything
         }
 
     }
+
     /**
      * Callback convention for async APIs
      */
     interface TidyCB {
-        (err?: Error, res?: TidyResult): void
+        (err: Error | null, res: TidyResult | null): void
     }
 
     /**
@@ -123,6 +124,5 @@ declare module 'libtidy' {
         export const TidyOption: Options.TidyOptionConstructor
     }
 
-    // a large module for options and possible values
-
+    // TODO: a large module for options and possible values
 }

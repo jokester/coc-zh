@@ -61,6 +61,19 @@ export function decodeHtmlEntity(str: string): string {
     return step2;
 }
 
+export function cleanHTML(html: string): Promise<string> {
+    return new Promise((fulfill, reject) => {
+        libtidy.tidyBuffer(html, (err, result) => {
+            if (err || !result)
+                reject(err);
+            else if (result.output == null)
+                reject(result.errlog);
+            else
+                fulfill(result.output.toString());
+        });
+    })
+}
+
 /**
  * recover <i><b> after <br>
  */

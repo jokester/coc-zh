@@ -7,7 +7,7 @@ import { logger_normal as logger } from './lib/util';
 import { download_list } from './lib/download_list';
 import { DownloadItem } from './lib/download';
 import { rawPathFor, saveRaw } from './lib/local-io';
-import { tidyHTML, selectPart, decodeHtmlEntity, fixMultiSpanTag, removeExtraTag } from './lib/html';
+import { tidyHTML, selectPart, decodeHtmlEntity, cleanHTML, fixMultiSpanTag, removeExtraTag } from './lib/html';
 
 /**
  * 下载文件 (已有时不会再次下载)
@@ -28,6 +28,7 @@ export function downloadItem(item: DownloadItem): Promise<void> {
 
     return Promise.all(parts).then((parts_html) => parts_html.join("\n"))
         .then(decodeHtmlEntity)
+        .then(cleanHTML)
         .then((html) => {
             saveRaw(item, html);
         });
