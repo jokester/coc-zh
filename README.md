@@ -12,12 +12,12 @@
 本合集内容使用gitbook和markdown排版。您可以以下列方式添加或更新内容:
 
 - 在[github](https://github.com/jokester/coc-zh)直接发pull request
-    - `/tools`内有一些用于抓取内容，排版的脚本
-- 在trow把内容链接pm给 id: monolith
+    - 可参考本目录内 `HOWTO.md`
+    - `/tools`内有一些用于下载html, 转换html到md, 排版md的脚本
+- 也可在trow论坛把内容链接pm给 id: monolith
 
 ## LICENSE
 
 译文的所有权利属于作者和译者。
 
 仅有 `/tools` 的许可是MIT
-

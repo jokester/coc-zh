@@ -33,14 +33,10 @@ declare module 'libtidy' {
 
     module Options {
 
-        // TODO
-        type OptKey = "1" | 1
 
-        type OptValue = 1 | 0 | boolean
+        type TidyOptionByName = string; //
 
-        type TidyOptionByName = "1" | "2"
-
-        type TidyOptionByID = 1 | 2
+        type TidyOptionByID = number; // 1 | 2
 
         /**
          * An available option
@@ -50,6 +46,7 @@ declare module 'libtidy' {
         }
 
         type OptionKey = TidyOption | TidyOptionByName | TidyOptionByID
+        type OptValue = any
  
         interface TidyOptionConstructor {
             new (): TidyOption
@@ -78,7 +75,7 @@ declare module 'libtidy' {
          * turned into a buffer.
          */
         interface TidyBufferStatic {
-            (document: string, options: Options.TidyOptions,
+            (document: string, options: Options.TidyOption,
                 callback: TidyCB): void
 
             (document: string, callback: TidyCB): void
@@ -91,9 +88,9 @@ declare module 'libtidy' {
          * Central object for dealing with the library at a low level
          */
         interface TidyDoc {
-            optGet(key: OptKey): boolean
-            optSet(key: OptKey, value: OptValue): void
-            options: TidyOptions
+            optGet(key: Options.OptionKey): Options.OptValue
+            optSet(key: Options.OptionKey, value: Options.OptValue): void
+            options: Options.TidyOption
 
             // Sync calls
             parseBufferSync(document: TidyDocument): string
@@ -127,6 +124,5 @@ declare module 'libtidy' {
     }
 
     // a large module for options and possible values
-
 
 }
