@@ -9,7 +9,8 @@
     "build": "gitbook build",
     "build:pdf": "gitbook pdf . ./coc-zh.pdf",
     "fetch": "ts-node tools/fetch.ts",
-    "convert": "ts-node tools/convert.ts"
+    "convert": "ts-node tools/convert.ts",
+    "fix": "ts-node tools/filter-footmark.ts"
   },
   "repository": {
     "type": "git",
@@ -37,9 +38,11 @@
   },
   "devDependencies": {
     "@types/cheerio": "^0.17.31",
+    "@types/q": "^1.0.0",
     "@types/request": "0.0.32",
     "cheerio": "^0.22.0",
     "libtidy": "^0.3.2",
+    "q": "^1.5.0",
     "request": "^2.76.0",
     "to-markdown": "^3.0.3"
   }
