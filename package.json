@@ -10,7 +10,9 @@
     "build:pdf": "gitbook pdf . ./coc-zh.pdf",
     "fetch": "ts-node tools/fetch.ts",
     "convert": "ts-node tools/convert.ts",
-    "fix": "ts-node tools/filter-footmark.ts"
+    "fix": "ts-node tools/filter-footmark.ts",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -34,7 +36,8 @@
     "gitbook-cli": "^2.3.0",
     "gitbook-plugin-github": "^2.0.0",
     "ts-node": "^1.6.0",
-    "typescript": "^2.0.3"
+    "typescript": "^2.0.3",
+    "snyk": "^1.232.0"
   },
   "devDependencies": {
     "@types/cheerio": "^0.17.31",
@@ -45,5 +48,6 @@
     "q": "^1.5.0",
     "request": "^2.76.0",
     "to-markdown": "^3.0.3"
-  }
+  },
+  "snyk": true
 }
