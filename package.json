@@ -33,7 +33,7 @@
   "dependencies": {
     "gitbook-cli": "^2.3.0",
     "gitbook-plugin-github": "^2.0.0",
-    "ts-node": "^1.6.0",
+    "ts-node": "^8.0.0",
     "typescript": "^2.0.3"
   },
   "devDependencies": {
